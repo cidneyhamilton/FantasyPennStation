@@ -247,6 +247,77 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &569709954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea4c3ba658ee84d51a7ccd6f9fc22176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  willWait: 0
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  endings:
+  - resultAction: 1
+    skipAction: -1
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 200
+  overrideColor: {r: 1, g: 1, b: 1, a: 1}
+  showOutputSockets: 1
+  parentActionListInEditor: {fileID: 8788273352769379557}
+  listSource: 1
+  actionList: {fileID: 0}
+  constantID: 0
+  parameterID: -1
+  invActionList: {fileID: 11400000, guid: 7d92a5688d4a2c540aaed716b12faf51, type: 2}
+  assetParameterID: -1
+  runFromStart: 1
+  jumpToAction: 0
+  jumpToActionParameterID: -1
+  jumpToActionActual: {fileID: 0}
+  runInParallel: 1
+  isSkippable: 0
+  localParameters:
+  - label: Marker
+    description: Marker to teleport the player to.
+    ID: 0
+    parameterType: 0
+    intValue: 0
+    constantID: 0
+    popUpID: 0
+    floatValue: 0
+    stringValue: 
+    gameObject: {fileID: 4853128391532297835}
+    objectValue: {fileID: 2893412320479328082}
+    vector3Value: {x: 0, y: 0, z: 0}
+    gameObjectParameterReferences: 0
+    variables: {fileID: 0}
+  parameterIDs: ffffffff
+  setParameters: 0
+  runMode: 1
+  hasUpgradedAgain: 0
 --- !u!1 &608639109
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,66 +936,6 @@ Transform:
   m_Father: {fileID: 1692804336}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1389751104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  willWait: 0
-  endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  endings:
-  - resultAction: 0
-    skipAction: -1
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 14
-    y: 14
-    width: 300
-    height: 212
-  overrideColor: {r: 1, g: 1, b: 1, a: 1}
-  showOutputSockets: 1
-  parentActionListInEditor: {fileID: 0}
-  constantID: 0
-  parameterID: -1
-  messageParameterID: -1
-  isPlayer: 1
-  playerID: -1
-  speaker: {fileID: 0}
-  messageText: You get in the elevator and go up.
-  lineID: -1
-  multiLineIDs: 
-  isBackground: 0
-  noAnimation: 0
-  headClip: {fileID: 0}
-  mouthClip: {fileID: 0}
-  play2DHeadAnim: 0
-  headClip2D: 
-  headLayer: 0
-  play2DMouthAnim: 0
-  mouthClip2D: 
-  mouthLayer: 0
-  waitTimeOffset: 0
 --- !u!1 &1402150673
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,6 +1000,77 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1497127051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea4c3ba658ee84d51a7ccd6f9fc22176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  isDisplayed: 1
+  showComment: 0
+  comment: 
+  willWait: 0
+  endAction: 0
+  skipAction: -1
+  skipActionActual: {fileID: 0}
+  linkedCutscene: {fileID: 0}
+  linkedAsset: {fileID: 0}
+  endings:
+  - resultAction: 1
+    skipAction: -1
+    skipActionActual: {fileID: 0}
+    linkedCutscene: {fileID: 0}
+    linkedAsset: {fileID: 0}
+  isEnabled: 1
+  isAssetFile: 0
+  isBreakPoint: 0
+  nodeRect:
+    serializedVersion: 2
+    x: 14
+    y: 14
+    width: 300
+    height: 200
+  overrideColor: {r: 1, g: 1, b: 1, a: 1}
+  showOutputSockets: 1
+  parentActionListInEditor: {fileID: 8057664178097465063}
+  listSource: 1
+  actionList: {fileID: 0}
+  constantID: 0
+  parameterID: -1
+  invActionList: {fileID: 11400000, guid: 0d744fd3687c91f58817ded6d44ee14e, type: 2}
+  assetParameterID: -1
+  runFromStart: 1
+  jumpToAction: 0
+  jumpToActionParameterID: -1
+  jumpToActionActual: {fileID: 0}
+  runInParallel: 1
+  isSkippable: 0
+  localParameters:
+  - label: Marker
+    description: Marker to teleport the player to.
+    ID: 0
+    parameterType: 0
+    intValue: 0
+    constantID: 0
+    popUpID: 0
+    floatValue: 0
+    stringValue: 
+    gameObject: {fileID: 2893412320479328082}
+    objectValue: {fileID: 2893412320479328082}
+    vector3Value: {x: 0, y: 0, z: 0}
+    gameObjectParameterReferences: 0
+    variables: {fileID: 0}
+  parameterIDs: ffffffff
+  setParameters: 0
+  runMode: 1
+  hasUpgradedAgain: 0
 --- !u!1 &1512497260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,66 +1102,6 @@ Transform:
   m_Father: {fileID: 1038875799}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1513451712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed656dc9f403a441f8fe89408c7a7189, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  willWait: 0
-  endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  endings:
-  - resultAction: 0
-    skipAction: -1
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 14
-    y: 14
-    width: 300
-    height: 212
-  overrideColor: {r: 1, g: 1, b: 1, a: 1}
-  showOutputSockets: 1
-  parentActionListInEditor: {fileID: 0}
-  constantID: 0
-  parameterID: -1
-  messageParameterID: -1
-  isPlayer: 1
-  playerID: -1
-  speaker: {fileID: 0}
-  messageText: You get in the elevator and go down.
-  lineID: -1
-  multiLineIDs: 
-  isBackground: 0
-  noAnimation: 0
-  headClip: {fileID: 0}
-  mouthClip: {fileID: 0}
-  play2DHeadAnim: 0
-  headClip2D: 
-  headLayer: 0
-  play2DMouthAnim: 0
-  mouthClip2D: 
-  mouthLayer: 0
-  waitTimeOffset: 0
 --- !u!114 &1586250176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1376,132 +1398,6 @@ Transform:
   m_Father: {fileID: 1038875799}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2034905953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0d4ab0f7ce3d4193a55deb9d20a7d66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  willWait: 0
-  endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  endings:
-  - resultAction: 1
-    skipAction: -1
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 18
-    y: 266
-    width: 300
-    height: 192
-  overrideColor: {r: 1, g: 1, b: 1, a: 1}
-  showOutputSockets: 1
-  parentActionListInEditor: {fileID: 0}
-  obToMoveParameterID: -1
-  obToMoveID: 0
-  obToMove: {fileID: 0}
-  markerParameterID: -1
-  markerID: 0
-  teleporter: {fileID: 4853128391522077579}
-  relativeGameObject: {fileID: 0}
-  relativeGameObjectID: 0
-  relativeGameObjectParameterID: -1
-  positionRelativeTo: 0
-  relativeVectorParameterID: -1
-  relativeVector: {x: 0, y: 0, z: 0}
-  vectorVarParameterID: -1
-  vectorVarID: 0
-  variableLocation: 0
-  recalculateActivePathFind: 0
-  isPlayer: 1
-  playerID: -1
-  playerParameterID: -1
-  snapCamera: 0
-  copyRotation: 0
-  variables: {fileID: 0}
-  variablesConstantID: 0
---- !u!114 &2044277897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0d4ab0f7ce3d4193a55deb9d20a7d66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 0
-  isDisplayed: 1
-  showComment: 0
-  comment: 
-  willWait: 0
-  endAction: 0
-  skipAction: -1
-  skipActionActual: {fileID: 0}
-  linkedCutscene: {fileID: 0}
-  linkedAsset: {fileID: 0}
-  endings:
-  - resultAction: 1
-    skipAction: -1
-    skipActionActual: {fileID: 0}
-    linkedCutscene: {fileID: 0}
-    linkedAsset: {fileID: 0}
-  isEnabled: 1
-  isAssetFile: 0
-  isBreakPoint: 0
-  nodeRect:
-    serializedVersion: 2
-    x: 15
-    y: 253
-    width: 300
-    height: 192
-  overrideColor: {r: 1, g: 1, b: 1, a: 1}
-  showOutputSockets: 1
-  parentActionListInEditor: {fileID: 0}
-  obToMoveParameterID: -1
-  obToMoveID: 0
-  obToMove: {fileID: 0}
-  markerParameterID: -1
-  markerID: 0
-  teleporter: {fileID: 2893412320468583090}
-  relativeGameObject: {fileID: 0}
-  relativeGameObjectID: 0
-  relativeGameObjectParameterID: -1
-  positionRelativeTo: 0
-  relativeVectorParameterID: -1
-  relativeVector: {x: 0, y: 0, z: 0}
-  vectorVarParameterID: -1
-  vectorVarID: 0
-  variableLocation: 0
-  recalculateActivePathFind: 0
-  isPlayer: 1
-  playerID: -1
-  playerParameterID: -1
-  snapCamera: 0
-  copyRotation: 0
-  variables: {fileID: 0}
-  variablesConstantID: 0
 --- !u!1 &2077561374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1562,7 +1458,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789760678477629185}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -111.8, y: 14.497, z: 0.4}
+  m_LocalPosition: {x: 82.5, y: 14.497, z: -83.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1712,6 +1608,7 @@ GameObject:
   - component: {fileID: 2893412320478456658}
   - component: {fileID: 2893412320477325714}
   - component: {fileID: 2893412320468583090}
+  - component: {fileID: 2893412320479751027}
   m_Layer: 2
   m_Name: 'Marker: Elevator: At Bottom'
   m_TagString: Untagged
@@ -1727,13 +1624,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2893412320479328082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -111.8, y: 1.63, z: 11.712}
+  m_LocalPosition: {x: 82.5, y: 1.63, z: -67.92801}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 935547124}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2893412320479751027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2893412320479328082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72e60470f1fa4fd1825cd67ce482cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  constantID: 23000
+  retainInPrefab: 0
+  autoManual: 0
 --- !u!114 &4853128391522077579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1804,7 +1716,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4853128391532297835}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -111.8, y: 14.497, z: 2.87}
+  m_LocalPosition: {x: 82.5, y: 14.497, z: -76.770004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1823,6 +1735,7 @@ GameObject:
   - component: {fileID: 4853128391531356779}
   - component: {fileID: 4853128391530356907}
   - component: {fileID: 4853128391522077579}
+  - component: {fileID: 4853128391532297836}
   m_Layer: 2
   m_Name: 'Marker: Elevator At Top'
   m_TagString: Untagged
@@ -1830,6 +1743,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4853128391532297836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4853128391532297835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f72e60470f1fa4fd1825cd67ce482cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  constantID: 10392
+  retainInPrefab: 0
+  autoManual: 0
 --- !u!1 &5185787336339480163
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,7 +2199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5737616848241904708}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -111.8, y: 3.46, z: 6.74}
+  m_LocalPosition: {x: 82.5, y: 3.46, z: -72.90001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2319,7 +2247,7 @@ MonoBehaviour:
     invParameterID: -1
   useButtons:
   - interaction: {fileID: 8057664178097465063}
-    assetFile: {fileID: 0}
+    assetFile: {fileID: 11400000, guid: 0d744fd3687c91f58817ded6d44ee14e, type: 2}
     customScriptObject: {fileID: 0}
     customScriptFunction: 
     isDisabled: 0
@@ -2407,7 +2335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6018468227340810679}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -111.8, y: 16.28, z: 6.74}
+  m_LocalPosition: {x: 82.5, y: 16.28, z: -72.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2471,7 +2399,7 @@ GameObject:
   - component: {fileID: 8057664178087284519}
   - component: {fileID: 8057664178097465063}
   m_Layer: 0
-  m_Name: 'Elevator: Use'
+  m_Name: 'Elevator at Top: Use'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2490,8 +2418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 1513451712}
-  - {fileID: 2044277897}
+  - {fileID: 1497127051}
   isSkippable: 1
   triggerTime: 0
   autosaveAfter: 0
@@ -2505,15 +2432,14 @@ MonoBehaviour:
   tagID: 0
   syncParamValues: 1
   backupData:
-  - className: AC.ActionSpeech
-    jsonData: '{"id":0,"isDisplayed":true,"showComment":false,"comment":"","willWait":false,"endAction":0,"skipAction":-1,"skipActionActual":{"instanceID":0},"linkedCutscene":{"instanceID":0},"linkedAsset":{"instanceID":0},"endings":[{"resultAction":0,"skipAction":-1,"skipActionActual":{"instanceID":0},"linkedCutscene":{"instanceID":0},"linkedAsset":{"instanceID":0}}],"isEnabled":true,"isAssetFile":false,"isBreakPoint":false,"nodeRect":{"serializedVersion":"2","x":14.0,"y":14.0,"width":300.0,"height":212.0},"overrideColor":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"showOutputSockets":true,"parentActionListInEditor":{"instanceID":0},"constantID":0,"parameterID":-1,"messageParameterID":-1,"isPlayer":true,"playerID":-1,"speaker":{"instanceID":0},"messageText":"You
-      get in the elevator and go down.","lineID":-1,"multiLineIDs":[],"isBackground":false,"noAnimation":false,"headClip":{"instanceID":0},"mouthClip":{"instanceID":0},"play2DHeadAnim":false,"headClip2D":"","headLayer":0,"play2DMouthAnim":false,"mouthClip2D":"","mouthLayer":0,"waitTimeOffset":0.0}'
+  - className: AC.ActionParamSet
+    jsonData: '{"id":0,"isDisplayed":true,"showComment":false,"comment":"","willWait":false,"endAction":0,"skipAction":-1,"skipActionActual":{"instanceID":0},"linkedCutscene":{"instanceID":0},"linkedAsset":{"instanceID":0},"endings":[{"resultAction":0,"skipAction":-1,"skipActionActual":{"instanceID":0},"linkedCutscene":{"instanceID":0},"linkedAsset":{"instanceID":0}}],"isEnabled":true,"isAssetFile":false,"isBreakPoint":false,"nodeRect":{"serializedVersion":"2","x":14.0,"y":14.0,"width":300.0,"height":192.0},"overrideColor":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"showOutputSockets":true,"parentActionListInEditor":{"instanceID":0},"actionListSource":1,"actionList":{"instanceID":0},"actionListConstantID":0,"actionListAsset":{"instanceID":28922},"changeOwn":false,"parameterID":0,"parameterToCopyID":0,"intValue":0,"intValueMax":0,"floatValue":0.0,"floatValueMax":0.0,"stringValue":"","gameobjectValue":{"instanceID":0},"gameObjectConstantID":0,"unityObjectValue":{"instanceID":2893412320479328082_0},"vector3Value":{"x":0.0,"y":0.0,"z":0.0},"setParamMethod":0,"globalVariableID":0,"globalVariableParameterID":-1,"ownParamID":-1,"variables":{"instanceID":0},"animator":{"instanceID":0},"animatorConstantID":0,"animatorParameterID":-1,"animatorParameterName":"","parameterLabel":"Marker"}'
     endingReferencesBuffer: 00
     endingOverrideIndex: 00000000
-  - className: AC.ActionTeleport
-    jsonData: '{"id":0,"isDisplayed":true,"showComment":false,"comment":"","willWait":false,"endAction":0,"skipAction":-1,"skipActionActual":{"instanceID":0},"linkedCutscene":{"instanceID":0},"linkedAsset":{"instanceID":0},"endings":[{"resultAction":1,"skipAction":-1,"skipActionActual":{"instanceID":0},"linkedCutscene":{"instanceID":0},"linkedAsset":{"instanceID":0}}],"isEnabled":true,"isAssetFile":false,"isBreakPoint":false,"nodeRect":{"serializedVersion":"2","x":15.0,"y":253.0,"width":300.0,"height":192.0},"overrideColor":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"showOutputSockets":true,"parentActionListInEditor":{"instanceID":0},"obToMoveParameterID":-1,"obToMoveID":0,"obToMove":{"instanceID":0},"markerParameterID":-1,"markerID":0,"teleporter":{"instanceID":0},"relativeGameObject":{"instanceID":0},"relativeGameObjectID":0,"relativeGameObjectParameterID":-1,"positionRelativeTo":0,"relativeVectorParameterID":-1,"relativeVector":{"x":0.0,"y":0.0,"z":0.0},"vectorVarParameterID":-1,"vectorVarID":0,"variableLocation":0,"recalculateActivePathFind":false,"isPlayer":true,"playerID":-1,"playerParameterID":-1,"snapCamera":false,"copyRotation":false,"variables":{"instanceID":0},"variablesConstantID":0}'
-    endingReferencesBuffer: 00
-    endingOverrideIndex: 00000000
+  - className: AC.ActionParamCheck
+    jsonData: '{"id":0,"isDisplayed":true,"showComment":false,"comment":"","willWait":false,"endAction":0,"skipAction":-1,"skipActionActual":{"instanceID":0},"linkedCutscene":{"instanceID":0},"linkedAsset":{"instanceID":0},"endings":[{"resultAction":1,"skipAction":-1,"skipActionActual":{"instanceID":0},"linkedCutscene":{"instanceID":0},"linkedAsset":{"instanceID":0}},{"resultAction":1,"skipAction":-1,"skipActionActual":{"instanceID":0},"linkedCutscene":{"instanceID":0},"linkedAsset":{"instanceID":0}}],"isEnabled":true,"isAssetFile":false,"isBreakPoint":false,"nodeRect":{"serializedVersion":"2","x":19.0,"y":239.0,"width":300.0,"height":160.0},"overrideColor":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"showOutputSockets":true,"parentActionListInEditor":{"instanceID":0},"resultActionTrue":0,"skipActionTrue":-1,"skipActionTrueActual":{"instanceID":0},"linkedCutsceneTrue":{"instanceID":0},"linkedAssetTrue":{"instanceID":0},"resultActionFail":1,"skipActionFail":-1,"skipActionFailActual":{"instanceID":0},"linkedCutsceneFail":{"instanceID":0},"linkedAssetFail":{"instanceID":0},"actionListSource":0,"actionListAsset":{"instanceID":0},"actionList":{"instanceID":0},"actionListConstantID":0,"parameterID":-1,"compareParameterID":-1,"checkOwn":true,"intValue":0,"floatValue":0.0,"intCondition":0,"stringValue":"","compareVariableID":0,"compareVariables":{"instanceID":0},"vector3Value":{"x":0.0,"y":0.0,"z":0.0},"compareObject":{"instanceID":0},"compareObjectConstantID":0,"compareUnityObject":{"instanceID":0},"boolValue":1,"boolCondition":0,"vectorCondition":0,"parameterLabel":"","gameObjectCompareType":0}'
+    endingReferencesBuffer: 0000
+    endingOverrideIndex: 0000000000000000
 --- !u!4 &8788273352762619173
 Transform:
   m_ObjectHideFlags: 0
@@ -2559,8 +2485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 1389751104}
-  - {fileID: 2034905953}
+  - {fileID: 569709954}
   isSkippable: 1
   triggerTime: 0
   autosaveAfter: 0
@@ -2573,4 +2498,13 @@ MonoBehaviour:
   parameters: []
   tagID: 0
   syncParamValues: 1
-  backupData: []
+  backupData:
+  - className: AC.ActionSpeech
+    jsonData: '{"id":0,"isDisplayed":true,"showComment":false,"comment":"","willWait":false,"endAction":0,"skipAction":-1,"skipActionActual":{"instanceID":0},"linkedCutscene":{"instanceID":0},"linkedAsset":{"instanceID":0},"endings":[{"resultAction":0,"skipAction":-1,"skipActionActual":{"instanceID":0},"linkedCutscene":{"instanceID":0},"linkedAsset":{"instanceID":0}}],"isEnabled":true,"isAssetFile":false,"isBreakPoint":false,"nodeRect":{"serializedVersion":"2","x":14.0,"y":14.0,"width":300.0,"height":212.0},"overrideColor":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"showOutputSockets":true,"parentActionListInEditor":{"instanceID":8788273352769379557_0},"constantID":0,"parameterID":-1,"messageParameterID":-1,"isPlayer":true,"playerID":-1,"speaker":{"instanceID":0},"messageText":"You
+      get in the elevator and go up.","lineID":-1,"multiLineIDs":[],"isBackground":false,"noAnimation":false,"headClip":{"instanceID":0},"mouthClip":{"instanceID":0},"play2DHeadAnim":false,"headClip2D":"","headLayer":0,"play2DMouthAnim":false,"mouthClip2D":"","mouthLayer":0,"waitTimeOffset":0.0}'
+    endingReferencesBuffer: 00
+    endingOverrideIndex: 00000000
+  - className: AC.ActionTeleport
+    jsonData: '{"id":0,"isDisplayed":true,"showComment":false,"comment":"","willWait":false,"endAction":0,"skipAction":-1,"skipActionActual":{"instanceID":0},"linkedCutscene":{"instanceID":0},"linkedAsset":{"instanceID":0},"endings":[{"resultAction":1,"skipAction":-1,"skipActionActual":{"instanceID":0},"linkedCutscene":{"instanceID":0},"linkedAsset":{"instanceID":0}}],"isEnabled":true,"isAssetFile":false,"isBreakPoint":false,"nodeRect":{"serializedVersion":"2","x":18.0,"y":266.0,"width":300.0,"height":192.0},"overrideColor":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"showOutputSockets":true,"parentActionListInEditor":{"instanceID":8788273352769379557_0},"obToMoveParameterID":-1,"obToMoveID":0,"obToMove":{"instanceID":0},"markerParameterID":-1,"markerID":0,"teleporter":{"instanceID":4853128391522077579_0},"relativeGameObject":{"instanceID":0},"relativeGameObjectID":0,"relativeGameObjectParameterID":-1,"positionRelativeTo":0,"relativeVectorParameterID":-1,"relativeVector":{"x":0.0,"y":0.0,"z":0.0},"vectorVarParameterID":-1,"vectorVarID":0,"variableLocation":0,"recalculateActivePathFind":false,"isPlayer":true,"playerID":-1,"playerParameterID":-1,"snapCamera":false,"copyRotation":false,"variables":{"instanceID":0},"variablesConstantID":0}'
+    endingReferencesBuffer: 00
+    endingOverrideIndex: 00000000
