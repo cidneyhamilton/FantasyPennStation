@@ -102,7 +102,7 @@ MonoBehaviour:
   directTurnsInstantly: 0
   stopTurningWhenReleaseInput: 0
   disableMovementWhenInterationMenusAreOpen: 0
-  directMovementType: 0
+  directMovementType: 1
   limitDirectMovement: 0
   cameraLockSnapAngleThreshold: 5
   directMovementPerspective: 0
