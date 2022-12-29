@@ -57,7 +57,7 @@ MonoBehaviour:
   alwaysCloseInteractionMenus: 1
   whenReselectHotspot: 0
   lockCursorOnStart: 1
-  hideLockedCursor: 1
+  hideLockedCursor: 0
   disableFreeAimWhenDragging: 0
   disableFreeAimWhenDraggingPickUp: 0
   runConversationsWithKeys: 0
