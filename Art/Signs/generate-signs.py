@@ -6,7 +6,7 @@ Generate SVGS for all twelve track numbers
 import shutil
 from cairosvg import svg2png
 
-trackCount = 12
+trackCount = 16
 source = "SignTemplate.svg"
 
 def generateSigns(count):

@@ -108,7 +108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4724531406180001497}
   m_Layer: 0
-  m_Name: Track Sign
+  m_Name: Track 1 Signs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -194,6 +194,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 159d14d7bb3701b55a14a4f2d7b68aff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7474e5d163b3a6cb79c62fc7f1b11565, type: 2}
     - target: {fileID: -4683669308469848369, guid: 159d14d7bb3701b55a14a4f2d7b68aff, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

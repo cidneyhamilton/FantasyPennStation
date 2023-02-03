@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7931833745304901399}
   m_Layer: 0
-  m_Name: Track Sign Set
+  m_Name: Track 1 Sign Set
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4724531406180001496, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
       propertyPath: m_Name
-      value: Track Sign
+      value: Track 1 Sign
       objectReference: {fileID: 0}
     - target: {fileID: 4724531406180001497, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
       propertyPath: m_RootOrder
@@ -105,7 +105,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4724531406180001496, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
       propertyPath: m_Name
-      value: Track Sign (1)
+      value: Track 1 Sign (1)
       objectReference: {fileID: 0}
     - target: {fileID: 4724531406180001497, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
       propertyPath: m_RootOrder
@@ -167,7 +167,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4724531406180001496, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
       propertyPath: m_Name
-      value: Track Sign (2)
+      value: Track 1 Sign (2)
       objectReference: {fileID: 0}
     - target: {fileID: 4724531406180001497, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
       propertyPath: m_RootOrder
