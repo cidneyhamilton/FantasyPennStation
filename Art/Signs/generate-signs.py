@@ -3,14 +3,15 @@
 """
 Generate SVGS for all twelve track numbers
 """
+import shutil
 
 trackCount = 12
 source = "SignTemplate.svg"
 
 def generateSigns(count):
-    for i in range(count):
+    for i in range(1,count+1):
         filename = f'sign_{i}.svg'
-        track_name = f'Track {ii}'
+        track_name = f'Track {i}'
         # Copy file and replace name
         shutil.copy(source, filename)
         with open(filename) as f:
