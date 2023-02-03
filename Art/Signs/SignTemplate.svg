@@ -134,25 +134,25 @@
      style="display:inline">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:50.8px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
-       x="181.45541"
-       y="65.323769"
+       style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:50.7999px;line-height:1.25;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264582"
+       x="271.28067"
+       y="65.323746"
        id="text32362"
        inkscape:label="Track Label"><tspan
          sodipodi:role="line"
          id="tspan32358"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:50.8px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
-         x="181.45541"
-         y="65.323769">Track 11</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:50.7999px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264582"
+         x="271.28067"
+         y="65.323746">Track 11</tspan><tspan
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:50.8px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
-         x="181.45541"
-         y="128.82376"
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-size:50.7999px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Semi-Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264582"
+         x="271.28067"
+         y="128.82362"
          id="tspan32360" /></text>
     <path
        id="path32364"
        style="color:#000000;fill:#ffffff;stroke-width:1;-inkscape-stroke:none"
-       d="m 447.49145,24.323657 -2.76365,2.89284 13.75108,13.13925 -48.51847,0.0811 0.003,1.81746 -0.003,2.23759 h 0.007 v 0.37672 l 48.90862,-0.0801 -14.45337,16.96123 3.37291,2.87476 18.79111,-22.05085 z"
+       d="m 219.09523,24.404757 2.76365,2.89284 -13.75108,13.13925 48.51847,0.0811 -0.003,1.81746 0.003,2.23759 h -0.007 v 0.37672 l -48.90862,-0.0801 14.45337,16.96123 -3.37291,2.87476 L 200,42.654757 Z"
        sodipodi:nodetypes="ccccccccccccc" />
     <text
        xml:space="preserve"
