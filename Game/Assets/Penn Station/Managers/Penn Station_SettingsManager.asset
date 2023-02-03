@@ -145,7 +145,7 @@ MonoBehaviour:
   cacheCameraMain: 0
   linearColorTextures: 0
   movingTurning: 3
-  hotspotDetection: 0
+  hotspotDetection: 1
   closeInteractionMenusIfPlayerLeavesVicinity: 0
   placeDistantHotspotsOnSeparateLayer: 1
   hotspotsInVicinity: 0
