@@ -10,7 +10,10 @@ public class TrackSignSet : MonoBehaviour
     // The  number of signs to spawn for each set of signs
     public float NumberOfSigns = 3;
 
-    public GameObject SignPrefab;
+    public Signpost SignPrefab;
+
+    // The material to apply to the sign
+    public Material signMaterial;    
 
     void Awake() 
     {
@@ -26,9 +29,12 @@ public class TrackSignSet : MonoBehaviour
             Vector3 position = Vector3.zero;
             position.x += i * SpaceBetween;
                         
-            GameObject sign = Instantiate(SignPrefab, position, Quaternion.identity);
+            Signpost sign = Instantiate(SignPrefab, position, Quaternion.identity) as Signpost;            
 
             sign.transform.SetParent(transform, false);
+
+            sign.ApplyMaterial(signMaterial);
+            
             
         }
         

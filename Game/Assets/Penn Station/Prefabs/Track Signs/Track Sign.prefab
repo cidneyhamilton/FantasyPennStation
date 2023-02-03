@@ -107,8 +107,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4724531406180001497}
+  - component: {fileID: 2237767258522856567}
   m_Layer: 0
-  m_Name: Track 1 Signs
+  m_Name: Track Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -131,6 +132,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2237767258522856567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4724531406180001496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a4409c6fd49c7589b6990f769b3a64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signMesh: {fileID: 6219891003150104944}
 --- !u!1001 &4724531406838588916
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -211,5 +225,10 @@ PrefabInstance:
 --- !u!4 &5051439220467892767 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 159d14d7bb3701b55a14a4f2d7b68aff, type: 3}
+  m_PrefabInstance: {fileID: 4724531406838588916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6219891003150104944 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 159d14d7bb3701b55a14a4f2d7b68aff, type: 3}
   m_PrefabInstance: {fileID: 4724531406838588916}
   m_PrefabAsset: {fileID: 0}

@@ -696,11 +696,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1749562440634266746, guid: 420f3f43af136e494afb68ff539a618f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 1749562440634266746, guid: 420f3f43af136e494afb68ff539a618f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1749562440634266746, guid: 420f3f43af136e494afb68ff539a618f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -741,7 +741,15 @@ PrefabInstance:
     - target: {fileID: 6551682611960600267, guid: 420f3f43af136e494afb68ff539a618f, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 1654548223921557737, guid: f21fb818084520d53ba9cc9edb408b14, type: 3}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 6551682611960600267, guid: 420f3f43af136e494afb68ff539a618f, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 01b12128793698279af440a6f3a7896c, type: 2}
+    - target: {fileID: 6551682611960600267, guid: 420f3f43af136e494afb68ff539a618f, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 420f3f43af136e494afb68ff539a618f, type: 3}
 --- !u!4 &44446675 stripped
@@ -1632,18 +1640,26 @@ PrefabInstance:
     - target: {fileID: 3864127424802949613, guid: 1acffcc5b8889574b9b8143ff52b8a27, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 3595224125737502759, guid: 0649a3faa7fb386f89ddab4301032d98, type: 3}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 3864127424802949613, guid: 1acffcc5b8889574b9b8143ff52b8a27, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: deec17d47bee8a983b235bf4bf114b32, type: 2}
+    - target: {fileID: 3864127424802949613, guid: 1acffcc5b8889574b9b8143ff52b8a27, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 8578181026900388700, guid: 1acffcc5b8889574b9b8143ff52b8a27, type: 3}
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8578181026900388700, guid: 1acffcc5b8889574b9b8143ff52b8a27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 8578181026900388700, guid: 1acffcc5b8889574b9b8143ff52b8a27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8578181026900388700, guid: 1acffcc5b8889574b9b8143ff52b8a27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2107,11 +2123,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3665363285324762216, guid: 01f7d4efc84d0680c90dd862ce3f1ff0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 3665363285324762216, guid: 01f7d4efc84d0680c90dd862ce3f1ff0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3665363285324762216, guid: 01f7d4efc84d0680c90dd862ce3f1ff0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2152,7 +2168,15 @@ PrefabInstance:
     - target: {fileID: 8103679037833457369, guid: 01f7d4efc84d0680c90dd862ce3f1ff0, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 4447755024562351835, guid: 6f07711a746d57ab8ab781bff6db4a4a, type: 3}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 8103679037833457369, guid: 01f7d4efc84d0680c90dd862ce3f1ff0, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: d528f2b7b31323197961bf4da36d571a, type: 2}
+    - target: {fileID: 8103679037833457369, guid: 01f7d4efc84d0680c90dd862ce3f1ff0, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01f7d4efc84d0680c90dd862ce3f1ff0, type: 3}
 --- !u!4 &106515121 stripped
@@ -2766,11 +2790,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4094116191204704772, guid: eb98f0123c87ac1adb5250070f93d6a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 4094116191204704772, guid: eb98f0123c87ac1adb5250070f93d6a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4094116191204704772, guid: eb98f0123c87ac1adb5250070f93d6a5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2811,7 +2835,15 @@ PrefabInstance:
     - target: {fileID: 8825588114600992949, guid: eb98f0123c87ac1adb5250070f93d6a5, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 5790461062994466113, guid: 736c76322d655a06dbe68c7d617f8313, type: 3}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 8825588114600992949, guid: eb98f0123c87ac1adb5250070f93d6a5, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 41a6b3a9bf1caa726b102864796d3204, type: 2}
+    - target: {fileID: 8825588114600992949, guid: eb98f0123c87ac1adb5250070f93d6a5, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb98f0123c87ac1adb5250070f93d6a5, type: 3}
 --- !u!4 &165818959 stripped
@@ -3021,18 +3053,26 @@ PrefabInstance:
     - target: {fileID: 4371720732121929797, guid: 37d37ab43fb91fc6cbed97d9403f7fc0, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 8469266043789897222, guid: 9f3e35e4dbcca835fbc018573b7de924, type: 3}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 4371720732121929797, guid: 37d37ab43fb91fc6cbed97d9403f7fc0, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 89e85afc4ea825bd280a7175f55c485e, type: 2}
+    - target: {fileID: 4371720732121929797, guid: 37d37ab43fb91fc6cbed97d9403f7fc0, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 9079408088704596724, guid: 37d37ab43fb91fc6cbed97d9403f7fc0, type: 3}
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9079408088704596724, guid: 37d37ab43fb91fc6cbed97d9403f7fc0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 9079408088704596724, guid: 37d37ab43fb91fc6cbed97d9403f7fc0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9079408088704596724, guid: 37d37ab43fb91fc6cbed97d9403f7fc0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6243,11 +6283,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 550943639923742192, guid: 070ddaaf0372cac7bb92bb981291bd22, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 550943639923742192, guid: 070ddaaf0372cac7bb92bb981291bd22, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 550943639923742192, guid: 070ddaaf0372cac7bb92bb981291bd22, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6288,7 +6328,15 @@ PrefabInstance:
     - target: {fileID: 4976100494036924225, guid: 070ddaaf0372cac7bb92bb981291bd22, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 6943641394790910130, guid: 6cf299b5bc9e5b16dade6ed7f86406d8, type: 3}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 4976100494036924225, guid: 070ddaaf0372cac7bb92bb981291bd22, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: b2060c8ae93354c57858d85287b9851b, type: 2}
+    - target: {fileID: 4976100494036924225, guid: 070ddaaf0372cac7bb92bb981291bd22, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 070ddaaf0372cac7bb92bb981291bd22, type: 3}
 --- !u!4 &448782402 stripped
@@ -6817,11 +6865,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4291598898380921914, guid: 5e4f898a03d981d618c4caef5bbc2e00, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 4291598898380921914, guid: 5e4f898a03d981d618c4caef5bbc2e00, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4291598898380921914, guid: 5e4f898a03d981d618c4caef5bbc2e00, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6862,17 +6910,20 @@ PrefabInstance:
     - target: {fileID: 8729422139464023691, guid: 5e4f898a03d981d618c4caef5bbc2e00, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 475711001}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 8729422139464023691, guid: 5e4f898a03d981d618c4caef5bbc2e00, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 152e1329cc92dae03850da5c15b3e7d5, type: 2}
+    - target: {fileID: 8729422139464023691, guid: 5e4f898a03d981d618c4caef5bbc2e00, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e4f898a03d981d618c4caef5bbc2e00, type: 3}
 --- !u!4 &475711000 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4291598898380921914, guid: 5e4f898a03d981d618c4caef5bbc2e00, type: 3}
-  m_PrefabInstance: {fileID: 475710999}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &475711001 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4291598898380921915, guid: 5e4f898a03d981d618c4caef5bbc2e00, type: 3}
   m_PrefabInstance: {fileID: 475710999}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &479828860
@@ -9895,11 +9946,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3541640088410350044, guid: 048a88fe5a6d50599bd2d8e05dd6ee70, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 3541640088410350044, guid: 048a88fe5a6d50599bd2d8e05dd6ee70, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3541640088410350044, guid: 048a88fe5a6d50599bd2d8e05dd6ee70, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9940,7 +9991,15 @@ PrefabInstance:
     - target: {fileID: 8326486932970685293, guid: 048a88fe5a6d50599bd2d8e05dd6ee70, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 1231797996655424227, guid: f1d3fcb1468e346f198f3ef864e276d5, type: 3}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 8326486932970685293, guid: 048a88fe5a6d50599bd2d8e05dd6ee70, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 8515564e84110881fb7950f5895aeb09, type: 2}
+    - target: {fileID: 8326486932970685293, guid: 048a88fe5a6d50599bd2d8e05dd6ee70, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 048a88fe5a6d50599bd2d8e05dd6ee70, type: 3}
 --- !u!4 &664556707 stripped
@@ -11045,11 +11104,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2990184836048754699, guid: 5a56394b929c5045cba9df6e1fb37de9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 2990184836048754699, guid: 5a56394b929c5045cba9df6e1fb37de9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2990184836048754699, guid: 5a56394b929c5045cba9df6e1fb37de9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11086,7 +11145,15 @@ PrefabInstance:
     - target: {fileID: 7770033300750416570, guid: 5a56394b929c5045cba9df6e1fb37de9, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 2769815669708268339, guid: 7a2aecf0751196d199d10a9f9d8dbe20, type: 3}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 7770033300750416570, guid: 5a56394b929c5045cba9df6e1fb37de9, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c510e50c1dae9cd3a247a8d598974f8, type: 2}
+    - target: {fileID: 7770033300750416570, guid: 5a56394b929c5045cba9df6e1fb37de9, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a56394b929c5045cba9df6e1fb37de9, type: 3}
 --- !u!4 &715737545 stripped
@@ -12529,18 +12596,26 @@ PrefabInstance:
     - target: {fileID: 3613638439725505259, guid: ef943fdd41508f3d8b4c2fcba85113ee, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 212492433374668008, guid: 7b03d083b50cffd21a9399136b2bbe52, type: 3}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 3613638439725505259, guid: ef943fdd41508f3d8b4c2fcba85113ee, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 676f6c8fb77262e7a80f682bbf0bc2cc, type: 2}
+    - target: {fileID: 3613638439725505259, guid: ef943fdd41508f3d8b4c2fcba85113ee, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 8110358790686390362, guid: ef943fdd41508f3d8b4c2fcba85113ee, type: 3}
       propertyPath: m_RootOrder
       value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 8110358790686390362, guid: ef943fdd41508f3d8b4c2fcba85113ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 8110358790686390362, guid: ef943fdd41508f3d8b4c2fcba85113ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8110358790686390362, guid: ef943fdd41508f3d8b4c2fcba85113ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15579,18 +15654,26 @@ PrefabInstance:
     - target: {fileID: 1250860148982046459, guid: d299c3a6976177017aa5bd857dd0b663, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 8974498935745380541, guid: 09d0340fe53ac3471a82bfc98c9a0154, type: 3}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 1250860148982046459, guid: d299c3a6976177017aa5bd857dd0b663, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: d32f30de5777f5a14b1b7586cc484193, type: 2}
+    - target: {fileID: 1250860148982046459, guid: d299c3a6976177017aa5bd857dd0b663, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 6048338660000627786, guid: d299c3a6976177017aa5bd857dd0b663, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6048338660000627786, guid: d299c3a6976177017aa5bd857dd0b663, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 6048338660000627786, guid: d299c3a6976177017aa5bd857dd0b663, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6048338660000627786, guid: d299c3a6976177017aa5bd857dd0b663, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16083,6 +16166,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1179094241}
     m_Modifications:
+    - target: {fileID: 688431853279170854, guid: 122f3b534f21c28a38ee1492feaf19d4, type: 3}
+      propertyPath: SignPrefab
+      value: 
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 688431853279170854, guid: 122f3b534f21c28a38ee1492feaf19d4, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 1f64abde3e8b0a208bae5cfd51ccffa8, type: 2}
+    - target: {fileID: 688431853279170854, guid: 122f3b534f21c28a38ee1492feaf19d4, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5415081869674410902, guid: 122f3b534f21c28a38ee1492feaf19d4, type: 3}
       propertyPath: m_Name
       value: Track 2 Sign Set
@@ -16093,11 +16188,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5415081869674410903, guid: 122f3b534f21c28a38ee1492feaf19d4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 5415081869674410903, guid: 122f3b534f21c28a38ee1492feaf19d4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5415081869674410903, guid: 122f3b534f21c28a38ee1492feaf19d4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20618,7 +20713,15 @@ PrefabInstance:
     - target: {fileID: 2798177694153031704, guid: a609b244c73669d9eae10d78e3b998d8, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 55690053629865873, guid: cd82d9362eb367b4fab088ad04a54dd4, type: 3}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 2798177694153031704, guid: a609b244c73669d9eae10d78e3b998d8, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 507f5601474ee85d0aa86e8d05d1b8a8, type: 2}
+    - target: {fileID: 2798177694153031704, guid: a609b244c73669d9eae10d78e3b998d8, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 7241487566845043368, guid: a609b244c73669d9eae10d78e3b998d8, type: 3}
       propertyPath: m_Name
       value: Track 12 Sign Set
@@ -20629,11 +20732,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7241487566845043369, guid: a609b244c73669d9eae10d78e3b998d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 7241487566845043369, guid: a609b244c73669d9eae10d78e3b998d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7241487566845043369, guid: a609b244c73669d9eae10d78e3b998d8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24692,11 +24795,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1376510008334717282, guid: 1f5eb1cf99f162e45a73ffbe3e89dd6f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 1376510008334717282, guid: 1f5eb1cf99f162e45a73ffbe3e89dd6f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1376510008334717282, guid: 1f5eb1cf99f162e45a73ffbe3e89dd6f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -24737,7 +24840,15 @@ PrefabInstance:
     - target: {fileID: 5886672922823799763, guid: 1f5eb1cf99f162e45a73ffbe3e89dd6f, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 8584820517041123933, guid: 21165f474ca152448ad398d6f0d2ad5c, type: 3}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 5886672922823799763, guid: 1f5eb1cf99f162e45a73ffbe3e89dd6f, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a2c9667fc7d2bcf389de9d7b6005f8bc, type: 2}
+    - target: {fileID: 5886672922823799763, guid: 1f5eb1cf99f162e45a73ffbe3e89dd6f, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f5eb1cf99f162e45a73ffbe3e89dd6f, type: 3}
 --- !u!4 &1709757225 stripped
@@ -25507,6 +25618,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1179094241}
     m_Modifications:
+    - target: {fileID: 3222459256704333222, guid: 91008f880893576ab84e586725def308, type: 3}
+      propertyPath: SignPrefab
+      value: 
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 3222459256704333222, guid: 91008f880893576ab84e586725def308, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 7474e5d163b3a6cb79c62fc7f1b11565, type: 2}
+    - target: {fileID: 3222459256704333222, guid: 91008f880893576ab84e586725def308, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 7931833745304901398, guid: 91008f880893576ab84e586725def308, type: 3}
       propertyPath: m_Name
       value: Track 1 Signs
@@ -25517,11 +25640,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7931833745304901399, guid: 91008f880893576ab84e586725def308, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 7931833745304901399, guid: 91008f880893576ab84e586725def308, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7931833745304901399, guid: 91008f880893576ab84e586725def308, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28732,11 +28855,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2166023255157764269, guid: 6dabf21c7d370208a90191d5025345cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -222.7
       objectReference: {fileID: 0}
     - target: {fileID: 2166023255157764269, guid: 6dabf21c7d370208a90191d5025345cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2166023255157764269, guid: 6dabf21c7d370208a90191d5025345cb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -28773,7 +28896,15 @@ PrefabInstance:
     - target: {fileID: 6675658417076752924, guid: 6dabf21c7d370208a90191d5025345cb, type: 3}
       propertyPath: SignPrefab
       value: 
-      objectReference: {fileID: 1084704504955618004, guid: 16345cdf851ce5e4eb86e821a46abeae, type: 3}
+      objectReference: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+    - target: {fileID: 6675658417076752924, guid: 6dabf21c7d370208a90191d5025345cb, type: 3}
+      propertyPath: signMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 3cb8ce2118280e2eca1b3bdc4e6215ba, type: 2}
+    - target: {fileID: 6675658417076752924, guid: 6dabf21c7d370208a90191d5025345cb, type: 3}
+      propertyPath: NumberOfSigns
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dabf21c7d370208a90191d5025345cb, type: 3}
 --- !u!4 &1974473435 stripped
@@ -31694,7 +31825,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789760678477629185}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1.283, y: 1.581, z: -77.018}
+  m_LocalPosition: {x: -1.283, y: 1.581, z: -74.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
