@@ -44,6 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce7c5f909ed791d5bb5a027414826c5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpaceBetween: 40
-  NumberOfSigns: 12
-  SignPrefab: {fileID: 4724531406180001496, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+  SpaceBetweenSigns: 8
+  NumberOfSignsPerInterval: 3
+  NumberOfIntervals: 3
+  SpaceBetweenIntervals: 70
+  SignPrefab: {fileID: 2237767258522856567, guid: a052b22ebd49d913e8165f1ff46466fd, type: 3}
+  signMaterial: {fileID: 2100000, guid: 7474e5d163b3a6cb79c62fc7f1b11565, type: 2}
