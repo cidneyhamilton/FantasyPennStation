@@ -157,8 +157,8 @@ MonoBehaviour:
       maxAngle: 315
     isUpgraded: 1
   angleSnapping: 0
-  walkSpeedScale: 4
-  runSpeedScale: 8
+  walkSpeedScale: 6
+  runSpeedScale: 12
   reverseSpeedFactor: 1
   canRunInReverse: 1
   turnSpeed: 2.7
@@ -172,7 +172,7 @@ MonoBehaviour:
   freezeRigidbodyWhenIdle: 0
   useRigidbodyForMovement: 1
   useRigidbody2DForMovement: 0
-  simulatedMass: 1
+  simulatedMass: 0.5
   simulatedVerticalSpeed: 0
   doWallReduction: 0
   wallLayer: Default
