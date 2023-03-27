@@ -8,4 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Penn Station/Scenes/PennStation.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: d7f1dab9b1f626811b9da7457e719a87, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5679780431b019dad8cb2e2a366bb7ce, type: 2}
