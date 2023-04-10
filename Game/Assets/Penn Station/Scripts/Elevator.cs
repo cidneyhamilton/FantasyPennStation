@@ -25,8 +25,21 @@ public class Elevator : MonoBehaviour
 		[SerializeField]
 		private bool _reachedDestination = true;
 
+		[SerializeField] private int _elevatorID;
+		
 		// Reference to the player object
 		private Transform _player;
+
+		void OnEnable()
+		{
+				ElevatorPanel.OnElevatorCall += OnCallElevator;
+		}
+
+		
+		void OnDisable()
+		{
+				ElevatorPanel.OnElevatorCall -= OnCallElevator;
+		}
 		
 		void FixedUpdate()
 		{
@@ -78,7 +91,7 @@ public class Elevator : MonoBehaviour
 		{
 				if (currentPos == _targetTop.position.y)
 				{
-						if (_playerInside && _moveDirection == Direction.Up)
+						if (_moveDirection == Direction.Up)
 						{
 								_reachedDestination = true;
 								_moveDirection = Direction.None;
@@ -92,7 +105,7 @@ public class Elevator : MonoBehaviour
 				else if (currentPos == _targetBottom.position.y)
 				{
 						
-						if (_playerInside && _moveDirection == Direction.Down)
+						if (_moveDirection == Direction.Down)
 						{
 								_reachedDestination = true;
 								_moveDirection = Direction.None;
@@ -146,5 +159,12 @@ public class Elevator : MonoBehaviour
 						_player.GetComponent<PlayerMovement>().MovementEnabled = enabled;
 				}
 		}
-		
+
+		void OnCallElevator(int ID)
+		{
+				if (ID == _elevatorID)
+				{
+						_reachedDestination = false;
+				}
+		}
 }
