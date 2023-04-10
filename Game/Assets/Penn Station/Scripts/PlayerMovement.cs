@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+		/// True if the player can move
+		public bool MovementEnabled = true;
+				
 		private Vector3 Velocity;
+
+		/// Raw player movement input
     private Vector3 PlayerMovementInput;
+
+		// Raw player rotation input
     private Vector3 PlayerRotation;
 
     [Header("Components Needed")]
@@ -18,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float JumpForce;
     [SerializeField] private float Sensitivity = 0.01f;
     [SerializeField] private float Gravity = -9.81f;
+
 
     void Start()
     {
@@ -37,6 +45,10 @@ public class PlayerMovement : MonoBehaviour
     }
     private void MovePlayer()
     {
+				if (!MovementEnabled) {
+						return;
+				}
+				
         Vector3 MoveVector = transform.TransformDirection(PlayerMovementInput);
 
         if (Controller.isGrounded)

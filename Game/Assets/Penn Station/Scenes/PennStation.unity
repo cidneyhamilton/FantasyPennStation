@@ -878,10 +878,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4537775861862785656, guid: 47879c254817843bdad02254ff127bf7, type: 3}
-      propertyPath: m_TagString
-      value: MainCamera
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 47879c254817843bdad02254ff127bf7, type: 3}
 --- !u!4 &1617378639 stripped
@@ -889,37 +885,3 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4398483095773480, guid: 47879c254817843bdad02254ff127bf7, type: 3}
   m_PrefabInstance: {fileID: 1617378638}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1740110635 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7923342105403594577, guid: 47879c254817843bdad02254ff127bf7, type: 3}
-  m_PrefabInstance: {fileID: 1617378638}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2072348238 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1755421785239208, guid: 47879c254817843bdad02254ff127bf7, type: 3}
-  m_PrefabInstance: {fileID: 1617378638}
-  m_PrefabAsset: {fileID: 0}
---- !u!143 &2072348239 stripped
-CharacterController:
-  m_CorrespondingSourceObject: {fileID: 143323952110608712, guid: 47879c254817843bdad02254ff127bf7, type: 3}
-  m_PrefabInstance: {fileID: 1617378638}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2072348240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072348238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70bbe863cbbf21067a46072664fc312b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerCamera: {fileID: 1740110635}
-  Controller: {fileID: 2072348239}
-  Player: {fileID: 1617378639}
-  Speed: 8
-  JumpForce: 5
-  Sensitivity: 80
-  Gravity: -9.81
