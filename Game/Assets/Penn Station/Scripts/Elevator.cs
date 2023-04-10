@@ -34,7 +34,6 @@ public class Elevator : MonoBehaviour
 		{
 				ElevatorPanel.OnElevatorCall += OnCallElevator;
 		}
-
 		
 		void OnDisable()
 		{
@@ -47,6 +46,11 @@ public class Elevator : MonoBehaviour
 				ChangeDirection(transform.position.y);
 		}
 
+		void Start()
+		{
+				_elevatorID = transform.parent.GetInstanceID();
+		}
+		
 		/// <summary>
 		/// Move in the target direction
 		/// </summary>
