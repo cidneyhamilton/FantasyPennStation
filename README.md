@@ -10,5 +10,5 @@ Check out the source code. Requires Unity 2021. Blender is needed for some of th
 
 ## Development
 
-The latest WebGL build is playable [here](_blank). 
+The latest WebGL build is playable [here on itch.io](https://cidney.itch.io/fantasy-penn-station?password=letsredothis). 
 
