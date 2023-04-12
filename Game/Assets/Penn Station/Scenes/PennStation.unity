@@ -1268,11 +1268,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1755421785239208, guid: 47879c254817843bdad02254ff127bf7, type: 3}
       propertyPath: m_Name
-      value: Visitor
-      objectReference: {fileID: 0}
-    - target: {fileID: 1755421785239208, guid: 47879c254817843bdad02254ff127bf7, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      value: PC Player
       objectReference: {fileID: 0}
     - target: {fileID: 4398483095773480, guid: 47879c254817843bdad02254ff127bf7, type: 3}
       propertyPath: m_RootOrder
