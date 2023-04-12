@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
+// Potential directions the elevator can be traveling
 public enum Direction {
 		Up,
 		Down,
@@ -10,25 +12,36 @@ public enum Direction {
 
 public class Elevator : MonoBehaviour
 {
+
+		// Coordinates for each floor the elvator can navigate to
 		[SerializeField]
 		private Transform _targetTop, _targetBottom;
 
+		// Speed of the elevator
 		[SerializeField]
 		private float _speed = 3.0f;
 
+		// Current direction the elevator is moving
 		[SerializeField]
 		private Direction _moveDirection = Direction.None;
 
+		// True if the player is inside the elevator, false otherwise
 		[SerializeField]
 		private bool _playerInside;
 
+		// True if the elevator reached the target floor
 		[SerializeField]
 		private bool _reachedDestination = true;
 
-		[SerializeField] private int _elevatorID;
+		// Unique id for this elevator
+		[SerializeField]
+		private int _elevatorID;
 		
 		// Reference to the player object
 		private Transform _player;
+
+		// The amount to offset the player's transform by when in the elevator
+		const float yOffset = 1.1176f;
 
 		void OnEnable()
 		{
@@ -125,7 +138,9 @@ public class Elevator : MonoBehaviour
 		{
 				if (other.tag == "Player")
 				{
-						other.transform.parent = this.transform;
+						other.transform.SetParent(this.transform);
+						other.transform.localScale = Vector3.one;
+						other.transform.localPosition = new Vector3(0, yOffset, 0);
 						_player = other.transform;
 						TogglePlayerMovement(false);
 						PlayerEntered();
@@ -136,7 +151,8 @@ public class Elevator : MonoBehaviour
 		{
 				if (other.tag == "Player")
 				{
-						other.transform.parent = null;
+						other.transform.SetParent(null, false);
+						other.transform.localScale = Vector3.one;
 						_player = null;
 						PlayerExited();
 				}
@@ -160,7 +176,14 @@ public class Elevator : MonoBehaviour
 		{				
 				if (_player)
 				{
-						_player.GetComponent<PlayerMovement>().MovementEnabled = enabled;
+						if (_player.GetComponent<PlayerMovement>() != null)
+						{
+								_player.GetComponent<PlayerMovement>().MovementEnabled = enabled;
+						}
+						if (_player.GetComponent<ContinuousMoveProviderBase>() != null)
+						{
+								_player.GetComponent<ContinuousMoveProviderBase>().enabled = enabled;
+						}
 				}
 		}
 
