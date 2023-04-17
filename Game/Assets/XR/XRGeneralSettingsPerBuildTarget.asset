@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: 8645625515877291422}
   m_InitManagerOnStart: 1
+<<<<<<< HEAD
 --- !u!114 &-1920660728796666220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,6 +29,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LoaderManagerInstance: {fileID: -110980444716926834}
   m_InitManagerOnStart: 1
+=======
+>>>>>>> ca5443e (Add XR packages.)
 --- !u!114 &-1442850018449957820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44,6 +47,7 @@ MonoBehaviour:
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
   m_Loaders: []
+<<<<<<< HEAD
 --- !u!114 &-110980444716926834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +65,8 @@ MonoBehaviour:
   m_AutomaticRunning: 0
   m_Loaders:
   - {fileID: 11400000, guid: 66acd775c847f4a70b94c37ac804d78b, type: 2}
+=======
+>>>>>>> ca5443e (Add XR packages.)
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73,11 +79,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2dc886499c26824283350fa532d087d, type: 3}
   m_Name: XRGeneralSettingsPerBuildTarget
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   Keys: 010000000d00000007000000
   Values:
   - {fileID: -2586940171881452897}
   - {fileID: 6618893908907583332}
   - {fileID: -1920660728796666220}
+=======
+  Keys: 010000000d000000
+  Values:
+  - {fileID: -2586940171881452897}
+  - {fileID: 6618893908907583332}
+>>>>>>> ca5443e (Add XR packages.)
 --- !u!114 &6618893908907583332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,4 +120,9 @@ MonoBehaviour:
   m_RequiresSettingsUpdate: 0
   m_AutomaticLoading: 0
   m_AutomaticRunning: 0
+<<<<<<< HEAD
   m_Loaders: []
+=======
+  m_Loaders:
+  - {fileID: 11400000, guid: 66acd775c847f4a70b94c37ac804d78b, type: 2}
+>>>>>>> ca5443e (Add XR packages.)
