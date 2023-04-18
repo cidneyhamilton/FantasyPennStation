@@ -64,6 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70bbe863cbbf21067a46072664fc312b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MovementEnabled: 1
   PlayerCamera: {fileID: 7923342105403594577}
   Controller: {fileID: 143323952110608712}
   Player: {fileID: 4398483095773480}
