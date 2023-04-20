@@ -3,17 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-// Potential directions the elevator can be traveling
-public enum Direction {
-		Up,
-		Down,
-		None
-}
-
+/// <summary>
+/// Manages the Elevator module
+/// </summary>
 public class Elevator : MonoBehaviour
 {
 
-		// Coordinates for each floor the elvator can navigate to
+		// Coordinates for each floor the elevator can navigate to 
 		[SerializeField]
 		private Transform _targetTop, _targetBottom;
 
@@ -22,26 +18,19 @@ public class Elevator : MonoBehaviour
 		private float _speed = 3.0f;
 
 		// Current direction the elevator is moving
-		[SerializeField]
 		private Direction _moveDirection = Direction.None;
 
-		// True if the player is inside the elevator, false otherwise
-		[SerializeField]
-		private bool _playerInside;
-
 		// True if the elevator reached the target floor
-		[SerializeField]
 		private bool _reachedDestination = true;
 
 		// Unique id for this elevator
-		[SerializeField]
 		private int _elevatorID;
 		
 		// Reference to the player object
 		private Transform _player;
 
 		// The amount to offset the player's transform by when in the elevator
-		const float yOffset = 1.1176f;
+		const float Y_OFFSET = 1.1176f;
 
 		void OnEnable()
 		{
@@ -61,7 +50,24 @@ public class Elevator : MonoBehaviour
 
 		void Start()
 		{
+				// Assign the elevator ID automaticaly
 				_elevatorID = transform.parent.GetInstanceID();
+		}
+		
+		private void OnTriggerEnter(Collider other)
+		{
+				if (other.tag == "Player")
+				{
+						OnPlayerEntered(other);
+				}				
+		}
+
+		private void OnTriggerExit(Collider other)
+		{
+				if (other.tag == "Player")
+				{
+						OnPlayerExited(other);
+				}
 		}
 		
 		/// <summary>
@@ -70,12 +76,14 @@ public class Elevator : MonoBehaviour
 		/// <param name="direction">The target movement direction</param>
 		void Move(Direction direction)
 		{
+				// Stop moving after reaching the destination
 				if (_reachedDestination)
 				{
 						TogglePlayerMovement(true);
 						return;
 				}
-				
+
+				// Move in the correct direction
 				if (direction == Direction.Up)
 				{
 						Move(_targetTop);
@@ -134,44 +142,34 @@ public class Elevator : MonoBehaviour
 				}
 		}
 
-		private void OnTriggerEnter(Collider other)
+		/// <summary>
+		/// Called when the player enters the elevator
+		/// </summary>
+		private void OnPlayerEntered(Collider other)
 		{
-				if (other.tag == "Player")
-				{
-						other.transform.SetParent(this.transform);
-						other.transform.localScale = Vector3.one;
-						other.transform.localPosition = new Vector3(0, yOffset, 0);
-						_player = other.transform;
-						TogglePlayerMovement(false);
-						PlayerEntered();
-				}				
-		}
-
-		private void OnTriggerExit(Collider other)
-		{
-				if (other.tag == "Player")
-				{
-						other.transform.SetParent(null, false);
-						other.transform.localScale = Vector3.one;
-						_player = null;
-						PlayerExited();
-				}
-		}
-
-		private void PlayerEntered()
-		{
-				Debug.Log("Player entering elevator.");
-				_playerInside = true;
+				// Debug.Log("Player entering elevator.");				
+				other.transform.SetParent(this.transform);
+				other.transform.localScale = Vector3.one;
+				other.transform.localPosition = new Vector3(0, Y_OFFSET, 0);
+				_player = other.transform;
+				TogglePlayerMovement(false);
 				_reachedDestination = false;
 		}
-
-		private void PlayerExited()
-		{
-				Debug.Log("Player exiting elevator.");
-				_playerInside = false;
-		}
-
 		
+		/// <summary>
+		/// Called when the player exits the elevator
+		/// </summary>
+		private void OnPlayerExited(Collider other)
+		{
+				// Debug.Log("Player exiting elevator.");				
+				other.transform.SetParent(null, false);
+				other.transform.localScale = Vector3.one;
+				_player = null;
+		}
+		
+		/// <summary>
+		/// Enables or disables the player's movement when on the elevator
+		/// </summary>
 		private void TogglePlayerMovement(bool enabled)
 		{				
 				if (_player)
@@ -187,10 +185,14 @@ public class Elevator : MonoBehaviour
 				}
 		}
 
+		/// <summary>
+		/// Handles calling the elevator with the given ID
+		/// </summary>
 		void OnCallElevator(int ID)
 		{
 				if (ID == _elevatorID)
 				{
+						// This elevator is being called; update to show we're not at the destination
 						_reachedDestination = false;
 				}
 		}
