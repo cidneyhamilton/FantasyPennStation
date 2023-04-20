@@ -131,10 +131,6 @@ MonoBehaviour:
   _targetTop: {fileID: 2137583446}
   _targetBottom: {fileID: 625010309}
   _speed: 3
-  _moveDirection: 2
-  _playerInside: 0
-  _reachedDestination: 1
-  _elevatorID: 0
 --- !u!65 &4496680503821467525
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -312,7 +308,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 812fea4e43ce4a233873d2a1467a6317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _elevatorID: 0
 --- !u!65 &7224743447834280807
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -371,7 +366,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 812fea4e43ce4a233873d2a1467a6317, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _elevatorID: 0
 --- !u!65 &6529769374999648416
 BoxCollider:
   m_ObjectHideFlags: 0
