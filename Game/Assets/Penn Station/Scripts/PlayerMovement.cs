@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Handles movement for the player character
+/// </summary>
 public class PlayerMovement : MonoBehaviour
 {
 		/// True if the player can move
 		public bool MovementEnabled = true;
-				
+
+		// The player's velocity
 		private Vector3 Velocity;
 
-		/// Raw player movement input
+		// Raw player movement input
     private Vector3 PlayerMovementInput;
 
 		// Raw player rotation input
@@ -19,20 +23,23 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform PlayerCamera;
     [SerializeField] private CharacterController Controller;
     [SerializeField] private Transform Player;
+
     [Space]
+	 		
     [Header("Movement")]
     [SerializeField] private float Speed;
     [SerializeField] private float JumpForce;
     [SerializeField] private float Sensitivity = 0.01f;
     [SerializeField] private float Gravity = -9.81f;
 
-
+		const float JUMP_FORCE = 2f;
+		
     void Start()
     {
+				// Disable the cursor by default
         Cursor.lockState = CursorLockMode.Locked; 
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -43,6 +50,10 @@ public class PlayerMovement : MonoBehaviour
         MoveCamera();
 
     }
+
+		/// <summary>
+		/// Handles moving the player
+		/// </summary>
     private void MovePlayer()
     {
 				if (!MovementEnabled) {
@@ -55,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Velocity.y = -1f;
 
+						// Starts a jump
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Velocity.y = JumpForce;
@@ -62,11 +74,11 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            Velocity.y -= Gravity * -2f * Time.deltaTime;
+						// Continues a jump
+            Velocity.y += Gravity * JUMP_FORCE * Time.deltaTime;
         }
 
 				Controller.Move(MoveVector * Speed * Time.deltaTime);
-
         Controller.Move(Velocity * Time.deltaTime);
 
     }
