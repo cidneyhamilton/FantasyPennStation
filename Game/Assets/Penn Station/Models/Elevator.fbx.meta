@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f93f9077aa6adf94396e4e95ee3e33da
+guid: 99611e6788ce25e449e3fed7f3168db0
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Protoype_MAT
-    second: {fileID: 2100000, guid: 57ee901e69e483b4b84a3d151646a150, type: 2}
+      name: Glass_MAT
+    second: {fileID: 2100000, guid: c772e33afd2086e4fa2dc51f91e385c5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Stairs_MAT
-    second: {fileID: 2100000, guid: 39b15ed0ce378994a97363d358896a6b, type: 2}
+      name: Metal_MAT
+    second: {fileID: 2100000, guid: 4b301d2ad14003d469d3915ec79473e4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -57,7 +57,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -86,7 +86,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 0
+  importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human: []
@@ -105,7 +105,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1

@@ -6,6 +6,7 @@ using UnityEngine;
 /// </summary>
 public class Staircase : MonoBehaviour
 {
+/*
 
 		// Reference to Escalator Pro managers (one up and one down)
 		private EscalatorPro.EscalatorPro[] _escalators;
@@ -16,8 +17,8 @@ public class Staircase : MonoBehaviour
 		void Awake()
 		{
 				// Cache escalators and stairs
-				_escalators = GetComponentsInChildren<EscalatorPro.EscalatorPro>();
-				_stairs = GetComponentsInChildren<EscalatorPro.Stair>();
+				//_escalators = GetComponentsInChildren<EscalatorPro.EscalatorPro>();
+				//_stairs = GetComponentsInChildren<EscalatorPro.Stair>();
 
 				// Disable escalators at start
 				ToggleEscalator(false);
@@ -48,4 +49,5 @@ public class Staircase : MonoBehaviour
 						ToggleEscalator(false);
 				}
 		}
+*/
 }
