@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8754358445668743953
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 303784077788214488, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 303784077788214488, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 303784077788214488, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 303784077788214488, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 303784077788214488, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 303784077788214488, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 303784077788214488, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 303784077788214488, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 303784077788214488, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 303784077788214488, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 303784077788214488, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115928087029886562, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_Name
+      value: Elevator_Car_Door Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677925407129993662, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -7681828991073595680, guid: 0d78559fcdbe2a74281033ba97675b77, type: 3}
+    - target: {fileID: 4922145864904165094, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -137966283517190679, guid: 0d78559fcdbe2a74281033ba97675b77, type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5fa78a4e53224bb488b15c56e398216b, type: 3}
