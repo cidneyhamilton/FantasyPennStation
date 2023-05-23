@@ -520,6 +520,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1710576716869960213}
     m_Modifications:
+    - target: {fileID: 1779084127302517342, guid: 2e7397571d27e8440bd647a6333b7dee, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 34ef33b0742e3c646910ae530b9d7ded, type: 2}
     - target: {fileID: 5133669438781998192, guid: 2e7397571d27e8440bd647a6333b7dee, type: 3}
       propertyPath: m_Name
       value: Escalator_Animated
