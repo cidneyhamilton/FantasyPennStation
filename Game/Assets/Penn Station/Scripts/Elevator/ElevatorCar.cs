@@ -34,18 +34,18 @@ public class ElevatorCar : MonoBehaviour
 		// Reference to the player object
 		[SerializeField]
 		private Transform _player;
-
+		
 		// The amount to offset the player's transform by when in the elevator
 		const float Y_OFFSET = 1.1176f;
 
 		void OnEnable()
 		{
-				ElevatorPanel.OnElevatorCall += OnCallElevator;
+				ElevatorEvents.OnElevatorCall += OnCallElevator;
 		}
 		
 		void OnDisable()
 		{
-				ElevatorPanel.OnElevatorCall -= OnCallElevator;
+				ElevatorEvents.OnElevatorCall -= OnCallElevator;
 		}
 		
 		void FixedUpdate()
@@ -238,13 +238,13 @@ public class ElevatorCar : MonoBehaviour
 		{
 				if (ID == _elevatorID && _moveDirection == Direction.None)
 				{
-						Debug.Log($"Calling elevator in direction {direction}");
 						CallElevator(direction);
 				}
 		}
 
 		void CallElevator(Direction direction)
 		{
+				Debug.Log($"Calling elevator in direction {direction}");
 				if (direction == Direction.Up && _floor == 1)
 				{
 						// Don't bother calling the elevator; we're already at the top
@@ -265,6 +265,8 @@ public class ElevatorCar : MonoBehaviour
 						Debug.Log("Call the elevator to the bottom");
 						CallElevatorToFloor(0, direction);
 				}
+
+				ElevatorEvents.OnAfterElevatorCall(_elevatorID, _floor);
 		}
 
 		void CallElevatorToFloor(int floor, Direction direction)
@@ -295,4 +297,5 @@ public class ElevatorCar : MonoBehaviour
 				CallElevatorToFloor(targetFloor, targetDirection);
 				
 		}
+
 }
