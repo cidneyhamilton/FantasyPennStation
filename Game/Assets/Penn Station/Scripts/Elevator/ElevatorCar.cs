@@ -4,11 +4,10 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 /// <summary>
-/// Manages the Elevator module
+/// Manage the Elevator Car module
 /// </summary>
-public class Elevator : MonoBehaviour
+public class ElevatorCar : MonoBehaviour
 {
-
 		// Coordinates for each floor the elevator can navigate to 
 		[SerializeField]
 		private Transform _targetTop, _targetBottom;
@@ -17,16 +16,23 @@ public class Elevator : MonoBehaviour
 		[SerializeField]
 		private float _speed = 3.0f;
 
+		// Floor of the elevator (0 for ground floor, 1 for top floor)
+		[SerializeField]
+		private int _floor = 1;
+		
 		// Current direction the elevator is moving
+		[SerializeField]
 		private Direction _moveDirection = Direction.None;
 
 		// True if the elevator reached the target floor
+		[SerializeField]
 		private bool _reachedDestination = true;
 
 		// Unique id for this elevator
 		private int _elevatorID;
 		
 		// Reference to the player object
+		[SerializeField]
 		private Transform _player;
 
 		// The amount to offset the player's transform by when in the elevator
@@ -44,14 +50,14 @@ public class Elevator : MonoBehaviour
 		
 		void FixedUpdate()
 		{
-				Move(_moveDirection);
-				ChangeDirection(transform.position.y);
+				// Move(_moveDirection);
+				// ChangeDirection(transform.position.y);
 		}
 
 		void Start()
 		{
 				// Assign the elevator ID automaticaly
-				_elevatorID = transform.parent.GetInstanceID();
+				_elevatorID = transform.GetComponentInParent<Elevator>().GetInstanceID();
 		}
 		
 		private void OnTriggerEnter(Collider other)
@@ -69,16 +75,24 @@ public class Elevator : MonoBehaviour
 						OnPlayerExited(other);
 				}
 		}
-		
+
+		/*
 		/// <summary>
 		/// Move in the target direction
 		/// </summary>
 		/// <param name="direction">The target movement direction</param>
 		void Move(Direction direction)
 		{
+				// If there's no detected player, don't move the elevator
+				if (_player == null)
+				{
+						return;
+				}
+				
 				// Stop moving after reaching the destination
 				if (_reachedDestination)
 				{
+						Debug.Log("Turn on player movement after reaching destination.");
 						TogglePlayerMovement(true);
 						return;
 				}
@@ -88,6 +102,7 @@ public class Elevator : MonoBehaviour
 				{
 						Move(_targetTop);
 				}
+				
 				else if (direction == Direction.Down)
 				{
 						Move(_targetBottom);
@@ -107,6 +122,7 @@ public class Elevator : MonoBehaviour
 		{
 				transform.position = Vector3.MoveTowards(transform.position, target.position, _speed * Time.deltaTime);
 		}
+		
 
 		/// <summary>
 		/// Changes the direction if at the top or the bottom
@@ -141,13 +157,14 @@ public class Elevator : MonoBehaviour
 						}
 				}
 		}
+		*/
 
 		/// <summary>
 		/// Called when the player enters the elevator
 		/// </summary>
 		private void OnPlayerEntered(Collider other)
 		{
-				// Debug.Log("Player entering elevator.");				
+				Debug.Log("Player entering elevator.");				
 				other.transform.SetParent(this.transform);
 				other.transform.localScale = Vector3.one;
 				other.transform.localPosition = new Vector3(0, Y_OFFSET, 0);
@@ -161,7 +178,7 @@ public class Elevator : MonoBehaviour
 		/// </summary>
 		private void OnPlayerExited(Collider other)
 		{
-				// Debug.Log("Player exiting elevator.");				
+				Debug.Log("Player exiting elevator.");				
 				other.transform.SetParent(null, false);
 				other.transform.localScale = Vector3.one;
 				_player = null;
@@ -188,12 +205,55 @@ public class Elevator : MonoBehaviour
 		/// <summary>
 		/// Handles calling the elevator with the given ID
 		/// </summary>
-		void OnCallElevator(int ID)
+		void OnCallElevator(int ID, Direction direction)
 		{
-				if (ID == _elevatorID)
+				if (ID == _elevatorID && _moveDirection == Direction.None)
 				{
-						// This elevator is being called; update to show we're not at the destination
-						_reachedDestination = false;
+						Debug.Log($"Calling elevator in direction {direction}");
+						CallElevator(direction);
 				}
 		}
+
+		void CallElevator(Direction direction)
+		{
+				if (direction == Direction.Up && _floor == 1)
+				{
+						// Don't bother calling the elevator; we're already at the top
+				}
+				else if (direction == Direction.Down && _floor == 0)
+				{
+						// Already at the bottom
+				}
+				else if (direction == Direction.Up && _floor == 0)
+				{
+						// Call the elevator to the top
+						Debug.Log("Call the elevator to the top");
+						CallElevatorToFloor(1, direction);
+				}
+				else if (direction == Direction.Down && _floor == 1)
+				{
+						// Call the elevator to the bottom
+						Debug.Log("Call the elevator to the bottom");
+						CallElevatorToFloor(0, direction);
+				}
+		}
+
+		void CallElevatorToFloor(int floor, Direction direction)
+		{
+				
+				Transform target = floor == 0 ? _targetBottom : _targetTop;				
+
+				_reachedDestination = false;
+				_moveDirection = direction;
+				
+				while (transform.position.y != target.position.y)
+				{						
+						transform.position = Vector3.MoveTowards(transform.position, target.position, _speed * Time.deltaTime);
+				}
+
+				_floor = floor;
+				_reachedDestination = true;
+				_moveDirection = Direction.None;
+		}
+
 }

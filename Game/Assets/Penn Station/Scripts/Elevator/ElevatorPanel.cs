@@ -12,12 +12,18 @@ public class ElevatorPanel : MonoBehaviour
 		private int _elevatorID = 0;
 
 		// Event to summon the elevator
-		public static event Action<int> OnElevatorCall;
+		public delegate void ElevatorEvent(int ID, Direction direction);
+		
+		public static ElevatorEvent OnElevatorCall;
+
+		[SerializeField]
+		private Direction _moveDirection = Direction.Up;
+		
 
 		void Start()
 		{
 				// Assign the elevator ID automatically
-				_elevatorID = transform.parent.GetInstanceID();
+				_elevatorID = transform.GetComponentInParent<Elevator>().GetInstanceID();
 		}
 
 		// Currently this is a trigger
@@ -25,8 +31,10 @@ public class ElevatorPanel : MonoBehaviour
 		{
 				if (other.tag == "Player")
 				{
+						Debug.Log($"Summoning elevator {_elevatorID}");
+						
 						// Invoke event to summon the elevator
-						OnElevatorCall?.Invoke(_elevatorID);
+						OnElevatorCall?.Invoke(_elevatorID, _moveDirection);
 				}
 		}
 }
