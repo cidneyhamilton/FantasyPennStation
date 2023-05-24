@@ -18,7 +18,7 @@ public class ElevatorCar : MonoBehaviour
 
 		// Floor of the elevator (0 for ground floor, 1 for top floor)
 		[SerializeField]
-		private int _floor = 1;
+		private int _floor = 0;
 		
 		// Current direction the elevator is moving
 		[SerializeField]
@@ -58,6 +58,16 @@ public class ElevatorCar : MonoBehaviour
 		{
 				// Assign the elevator ID automaticaly
 				_elevatorID = transform.GetComponentInParent<Elevator>().GetInstanceID();
+
+				// Elevator starts on specified floor
+				if (_floor == 0)
+				{
+						transform.SetPositionAndRotation(_targetBottom.position, _targetBottom.rotation);
+				}
+				else if (_floor == 1)
+				{
+						transform.SetPositionAndRotation(_targetTop.position, _targetTop.rotation);
+				}
 		}
 		
 		private void OnTriggerEnter(Collider other)
@@ -165,12 +175,33 @@ public class ElevatorCar : MonoBehaviour
 		private void OnPlayerEntered(Collider other)
 		{
 				Debug.Log("Player entering elevator.");				
-				other.transform.SetParent(this.transform);
-				other.transform.localScale = Vector3.one;
-				other.transform.localPosition = new Vector3(0, Y_OFFSET, 0);
-				_player = other.transform;
+
+				MovePlayerToElevator(other.transform);
+				
+				// Immediately go up or down
 				TogglePlayerMovement(false);
-				_reachedDestination = false;
+				
+				CallElevatorToOppositeFloor();
+
+				TogglePlayerMovement(true);
+
+				MovePlayerFromElevator(other.transform);
+				
+		}
+
+		private void MovePlayerToElevator(Transform player)
+		{
+				player.SetParent(this.transform);
+				player.localScale = Vector3.one;
+				player.localPosition = new Vector3(0, Y_OFFSET, 0);
+				_player = player;
+		}
+
+		private void MovePlayerFromElevator(Transform player)
+		{
+				player.SetParent(null, false);
+				player.localScale = Vector3.one;
+				_player = null;
 		}
 		
 		/// <summary>
@@ -179,9 +210,7 @@ public class ElevatorCar : MonoBehaviour
 		private void OnPlayerExited(Collider other)
 		{
 				Debug.Log("Player exiting elevator.");				
-				other.transform.SetParent(null, false);
-				other.transform.localScale = Vector3.one;
-				_player = null;
+
 		}
 		
 		/// <summary>
@@ -240,7 +269,8 @@ public class ElevatorCar : MonoBehaviour
 
 		void CallElevatorToFloor(int floor, Direction direction)
 		{
-				
+
+				Debug.Log($"Calling elevator to floor {floor}");
 				Transform target = floor == 0 ? _targetBottom : _targetTop;				
 
 				_reachedDestination = false;
@@ -256,4 +286,13 @@ public class ElevatorCar : MonoBehaviour
 				_moveDirection = Direction.None;
 		}
 
+		// Call the elevator to the opposite floor
+		void CallElevatorToOppositeFloor()
+		{
+				int targetFloor = _floor == 0 ? 1 : 0;
+				Direction targetDirection = targetFloor == 1 ? Direction.Down : Direction.Up;
+				
+				CallElevatorToFloor(targetFloor, targetDirection);
+				
+		}
 }

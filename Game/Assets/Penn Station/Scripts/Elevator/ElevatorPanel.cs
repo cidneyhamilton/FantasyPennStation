@@ -29,12 +29,18 @@ public class ElevatorPanel : MonoBehaviour
 		// Currently this is a trigger
 		private void OnTriggerEnter(Collider other)
 		{
+				
 				if (other.tag == "Player")
 				{
-						Debug.Log($"Summoning elevator {_elevatorID}");
-						
-						// Invoke event to summon the elevator
-						OnElevatorCall?.Invoke(_elevatorID, _moveDirection);
+						// Only summon the elevator if player movement is enabled; ie, not when elevator actually moving
+						if (other.GetComponent<PlayerMovement>().MovementEnabled)
+						{
+								Debug.Log($"Summoning elevator {_elevatorID}");
+								
+								// Invoke event to summon the elevator
+								OnElevatorCall?.Invoke(_elevatorID, _moveDirection);
+						}
 				}
 		}
+		
 }
