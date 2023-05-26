@@ -20,6 +20,8 @@ public class ElevatorPanel : MonoBehaviour
 		[SerializeField]
 		private Animator _frameDoors, _carDoors;
 
+		private bool summonedElevator;
+
 		void OnEnable()
 		{
 				ElevatorEvents.OnAfterElevatorCall += OpenDoors;				
@@ -43,6 +45,8 @@ public class ElevatorPanel : MonoBehaviour
 				if (other.tag == "Player")
 				{
 						// Only summon the elevator if player movement is enabled; ie, not when elevator actually moving
+						summonedElevator = true;
+						
 						if (other.GetComponent<PlayerMovement>().MovementEnabled)
 						{
 								Debug.Log($"Summoning elevator {_elevatorID}");
@@ -58,6 +62,7 @@ public class ElevatorPanel : MonoBehaviour
 				if (other.tag == "Player")
 				{
 						CloseDoors(_elevatorID, _floor);
+						summonedElevator = false;
 				}
 		}
 
@@ -75,9 +80,9 @@ public class ElevatorPanel : MonoBehaviour
 		
 		void ToggleDoors(int id, int floor, bool isOpen)
 		{
-				if (id == _elevatorID && floor == _floor)
+				if (id == _elevatorID && floor == _floor && summonedElevator)
 				{
-						Debug.Log($"Toggling doors for {id} on {floor}");
+						Debug.Log($"Toggling doors for {id} on {floor} from {gameObject.name}");
 						_frameDoors.SetBool("Open", isOpen);
 						_carDoors.SetBool("Open", isOpen);
 				}

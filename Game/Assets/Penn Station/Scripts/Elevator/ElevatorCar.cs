@@ -48,11 +48,6 @@ public class ElevatorCar : MonoBehaviour
 				ElevatorEvents.OnElevatorCall -= OnCallElevator;
 		}
 		
-		void FixedUpdate()
-		{
-				// Move(_moveDirection);
-				// ChangeDirection(transform.position.y);
-		}
 
 		void Start()
 		{
@@ -86,95 +81,12 @@ public class ElevatorCar : MonoBehaviour
 				}
 		}
 
-		/*
-		/// <summary>
-		/// Move in the target direction
-		/// </summary>
-		/// <param name="direction">The target movement direction</param>
-		void Move(Direction direction)
-		{
-				// If there's no detected player, don't move the elevator
-				if (_player == null)
-				{
-						return;
-				}
-				
-				// Stop moving after reaching the destination
-				if (_reachedDestination)
-				{
-						Debug.Log("Turn on player movement after reaching destination.");
-						TogglePlayerMovement(true);
-						return;
-				}
-
-				// Move in the correct direction
-				if (direction == Direction.Up)
-				{
-						Move(_targetTop);
-				}
-				
-				else if (direction == Direction.Down)
-				{
-						Move(_targetBottom);
-				}
-				else
-				{
-						// Remain stationary
-				}
-
-		}
-		
-		/// <summary>
-		/// Move towards the target platform
-		/// </summary>
-		/// <param name="direction">The target movement transform</param>
-		void Move(Transform target)
-		{
-				transform.position = Vector3.MoveTowards(transform.position, target.position, _speed * Time.deltaTime);
-		}
-		
-
-		/// <summary>
-		/// Changes the direction if at the top or the bottom
-		/// </summary>
-		/// <param name="direction">The current position of the platform</param>
-		void ChangeDirection(float currentPos)
-		{
-				if (currentPos == _targetTop.position.y)
-				{
-						if (_moveDirection == Direction.Up)
-						{
-								_reachedDestination = true;
-								_moveDirection = Direction.None;
-						}
-						else
-						{
-								_moveDirection = Direction.Down;
-						}
-
-				}
-				else if (currentPos == _targetBottom.position.y)
-				{
-						
-						if (_moveDirection == Direction.Down)
-						{
-								_reachedDestination = true;
-								_moveDirection = Direction.None;
-						}
-						else
-						{
-								_moveDirection = Direction.Up;
-						}
-				}
-		}
-		*/
-
 		/// <summary>
 		/// Called when the player enters the elevator
 		/// </summary>
 		private void OnPlayerEntered(Collider other)
 		{
-				Debug.Log("Player entering elevator.");				
+				Debug.Log($"Player entering elevator on floor {_floor}.");				
 
 				MovePlayerToElevator(other.transform);
 				
@@ -191,16 +103,16 @@ public class ElevatorCar : MonoBehaviour
 
 		private void MovePlayerToElevator(Transform player)
 		{
-				player.SetParent(this.transform);
-				player.localScale = Vector3.one;
-				player.localPosition = new Vector3(0, Y_OFFSET, 0);
+				// player.SetParent(this.transform);
+				// player.localScale = Vector3.one;
+				// player.localPosition = new Vector3(0, Y_OFFSET, 0);
 				_player = player;
 		}
 
 		private void MovePlayerFromElevator(Transform player)
 		{
-				player.SetParent(null, false);
-				player.localScale = Vector3.one;
+				// player.SetParent(null, false);
+				// player.localScale = Vector3.one;
 				_player = null;
 		}
 		
