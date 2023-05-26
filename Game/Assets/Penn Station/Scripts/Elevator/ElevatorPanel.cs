@@ -24,12 +24,14 @@ public class ElevatorPanel : MonoBehaviour
 
 		void OnEnable()
 		{
-				ElevatorEvents.OnAfterElevatorCall += OpenDoors;				
+				ElevatorEvents.OnAfterElevatorCall += OpenDoors;
+				ElevatorEvents.OnAfterElevatorReachesDestination += OpenAllDoors;
 		}
 
 		void OnDisable()
 		{
 				ElevatorEvents.OnAfterElevatorCall -= OpenDoors;
+				ElevatorEvents.OnAfterElevatorReachesDestination -= OpenAllDoors;
 		}
 		
 		void Start()
@@ -66,16 +68,42 @@ public class ElevatorPanel : MonoBehaviour
 				}
 		}
 
-		
+
+		// Open doors on a single side
 		void OpenDoors(int id, int floor)
 		{
 				ToggleDoors(id, floor, true);
 		}
 
 		
+		// Close doors on single side
 		void CloseDoors(int id, int floor)
 		{
 				ToggleDoors(id, floor, false);
+		}
+
+		// Open doors on all sides
+		void OpenAllDoors(int id, int floor)
+		{
+		
+				if (id == _elevatorID && floor == _floor)
+				{
+						Debug.Log($"Opening all doors for {id} on {floor}");
+						_frameDoors.SetBool("Open", true);
+						_carDoors.SetBool("Open", true);
+				}		
+		}
+
+		// Close doors on all sides
+		public void CloseAllDoors(int id, int floor)
+		{
+		
+				if (id == _elevatorID && floor == _floor)
+				{
+						Debug.Log($"Closing all doors for {id} on {floor}");
+						_frameDoors.SetBool("Open", false);
+						_carDoors.SetBool("Open", false);
+				}		
 		}
 		
 		void ToggleDoors(int id, int floor, bool isOpen)

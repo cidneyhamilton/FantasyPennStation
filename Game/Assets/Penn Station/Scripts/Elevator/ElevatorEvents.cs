@@ -13,4 +13,8 @@ public class ElevatorEvents
 
 		// Event after elevator is summoned
 		public static ElevatorDoorEvent OnAfterElevatorCall;
+
+		// Event after the elevator reaches the destination floor
+		public static ElevatorDoorEvent OnAfterElevatorReachesDestination;
+
 }

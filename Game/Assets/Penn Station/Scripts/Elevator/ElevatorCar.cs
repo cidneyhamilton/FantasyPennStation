@@ -19,6 +19,8 @@ public class ElevatorCar : MonoBehaviour
 		// Floor of the elevator (0 for ground floor, 1 for top floor)
 		[SerializeField]
 		private int _floor = 0;
+
+		private int _destinationFloor = 0;
 		
 		// Current direction the elevator is moving
 		[SerializeField]
@@ -79,6 +81,27 @@ public class ElevatorCar : MonoBehaviour
 				{
 						OnPlayerExited(other);
 				}
+		}
+
+		void FixedUpdate()
+		{
+				Transform target = _destinationFloor == 0 ? _targetBottom : _targetTop;				
+				if (_reachedDestination == false && _moveDirection != Direction.None)
+				{
+						Debug.Log($"Target position: {target.position.y}, current position: { transform.position.y }");
+						transform.position = Vector3.MoveTowards(transform.position, target.position, _speed * Time.deltaTime);
+
+						// Wrap things up if we reach the destination floor
+						if (Mathf.Approximately(transform.position.y, target.position.y))
+						{
+								
+								_floor = _destinationFloor;
+								_reachedDestination = true;
+								_moveDirection = Direction.None;
+								ElevatorEvents.OnAfterElevatorReachesDestination(_elevatorID, _destinationFloor);
+						}
+				}
+
 		}
 
 		/// <summary>
@@ -185,19 +208,11 @@ public class ElevatorCar : MonoBehaviour
 		{
 
 				Debug.Log($"Calling elevator to floor {floor}");
-				Transform target = floor == 0 ? _targetBottom : _targetTop;				
 
 				_reachedDestination = false;
 				_moveDirection = direction;
-				
-				while (transform.position.y != target.position.y)
-				{						
-						transform.position = Vector3.MoveTowards(transform.position, target.position, _speed * Time.deltaTime);
-				}
+				_destinationFloor = floor;
 
-				_floor = floor;
-				_reachedDestination = true;
-				_moveDirection = Direction.None;
 		}
 
 		// Call the elevator to the opposite floor
