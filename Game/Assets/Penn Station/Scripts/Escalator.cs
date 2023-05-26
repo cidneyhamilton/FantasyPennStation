@@ -12,10 +12,10 @@ public class Escalator : MonoBehaviour
 
 		void Start()
 		{
-				Debug.Log($"Staircase rotation: {Staircase.transform.rotation.eulerAngles.y}");
+				Logger.Log($"Staircase rotation: {Staircase.transform.rotation.eulerAngles.y}");
 				if (Staircase.transform.rotation.eulerAngles.y != 180)
 				{
-						Debug.Log("Flipping staircase.");
+						Logger.Log("Flipping staircase.");
 						// Flip movement direction						
 						MovementDirection = new Vector3(MovementDirection.x * -1, MovementDirection.y, MovementDirection.z);
 				}
@@ -24,7 +24,7 @@ public class Escalator : MonoBehaviour
 		{
 				if (other.tag == "Player")
 				{
-						Debug.Log("Player entering escalator.");
+						Logger.Log("Player entering escalator.");
 						_player = other.gameObject;
 						_onEscalator = true;
 				}
@@ -34,7 +34,7 @@ public class Escalator : MonoBehaviour
 		{
 				if (other.tag == "Player")
 				{
-						// Debug.Log("Player exiting escalator.");
+						Logger.Log("Player exiting escalator.");
 						_player = null;
 						_onEscalator = false;
 				}

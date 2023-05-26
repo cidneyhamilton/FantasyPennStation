@@ -51,7 +51,7 @@ public class ElevatorPanel : MonoBehaviour
 						
 						if (other.GetComponent<PlayerMovement>().MovementEnabled)
 						{
-								Debug.Log($"Summoning elevator {_elevatorID}");
+								Logger.Log($"Summoning elevator {_elevatorID}");
 								
 								// Invoke event to summon the elevator
 								ElevatorEvents.OnElevatorCall(_elevatorID, _moveDirection);
@@ -88,7 +88,7 @@ public class ElevatorPanel : MonoBehaviour
 		
 				if (id == _elevatorID && floor == _floor)
 				{
-						Debug.Log($"Opening all doors for {id} on {floor}");
+						Logger.Log($"Opening all doors for {id} on {floor}");
 						_frameDoors.SetBool("Open", true);
 						_carDoors.SetBool("Open", true);
 				}		
@@ -100,7 +100,7 @@ public class ElevatorPanel : MonoBehaviour
 		
 				if (id == _elevatorID && floor == _floor)
 				{
-						Debug.Log($"Closing all doors for {id} on {floor}");
+						Logger.Log($"Closing all doors for {id} on {floor}");
 						_frameDoors.SetBool("Open", false);
 						_carDoors.SetBool("Open", false);
 				}		
@@ -110,7 +110,7 @@ public class ElevatorPanel : MonoBehaviour
 		{
 				if (id == _elevatorID && floor == _floor && summonedElevator)
 				{
-						Debug.Log($"Toggling doors for {id} on {floor} from {gameObject.name}");
+						Logger.Log($"Toggling doors for {id} on {floor} from {gameObject.name}");
 						_frameDoors.SetBool("Open", isOpen);
 						_carDoors.SetBool("Open", isOpen);
 				}

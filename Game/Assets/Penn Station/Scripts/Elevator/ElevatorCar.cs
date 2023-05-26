@@ -88,7 +88,7 @@ public class ElevatorCar : MonoBehaviour
 				Transform target = _destinationFloor == 0 ? _targetBottom : _targetTop;				
 				if (_reachedDestination == false && _moveDirection != Direction.None)
 				{
-						Debug.Log($"Target position: {target.position.y}, current position: { transform.position.y }");
+						Logger.Log($"Target position: {target.position.y}, current position: { transform.position.y }");
 						transform.position = Vector3.MoveTowards(transform.position, target.position, _speed * Time.deltaTime);
 
 						// Wrap things up if we reach the destination floor
@@ -109,7 +109,7 @@ public class ElevatorCar : MonoBehaviour
 		/// </summary>
 		private void OnPlayerEntered(Collider other)
 		{
-				Debug.Log($"Player entering elevator on floor {_floor}.");				
+				Logger.Log($"Player entering elevator on floor {_floor}.");				
 
 				MovePlayerToElevator(other.transform);
 				
@@ -144,7 +144,7 @@ public class ElevatorCar : MonoBehaviour
 		/// </summary>
 		private void OnPlayerExited(Collider other)
 		{
-				Debug.Log("Player exiting elevator.");				
+				Logger.Log("Player exiting elevator.");				
 
 		}
 		
@@ -179,7 +179,7 @@ public class ElevatorCar : MonoBehaviour
 
 		void CallElevator(Direction direction)
 		{
-				Debug.Log($"Calling elevator in direction {direction}");
+				Logger.Log($"Calling elevator in direction {direction}");
 				if (direction == Direction.Up && _floor == 1)
 				{
 						// Don't bother calling the elevator; we're already at the top
@@ -191,13 +191,13 @@ public class ElevatorCar : MonoBehaviour
 				else if (direction == Direction.Up && _floor == 0)
 				{
 						// Call the elevator to the top
-						Debug.Log("Call the elevator to the top");
+						Logger.Log("Call the elevator to the top");
 						CallElevatorToFloor(1, direction);
 				}
 				else if (direction == Direction.Down && _floor == 1)
 				{
 						// Call the elevator to the bottom
-						Debug.Log("Call the elevator to the bottom");
+						Logger.Log("Call the elevator to the bottom");
 						CallElevatorToFloor(0, direction);
 				}
 
@@ -207,7 +207,7 @@ public class ElevatorCar : MonoBehaviour
 		void CallElevatorToFloor(int floor, Direction direction)
 		{
 
-				Debug.Log($"Calling elevator to floor {floor}");
+				Logger.Log($"Calling elevator to floor {floor}");
 
 				_reachedDestination = false;
 				_moveDirection = direction;

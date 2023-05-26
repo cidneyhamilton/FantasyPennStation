@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections;
 using System.Threading;
 using UnityEngine;
@@ -33,3 +34,4 @@ public class TargetFrameRate : MonoBehaviour
     }
   
 }
+#endif
