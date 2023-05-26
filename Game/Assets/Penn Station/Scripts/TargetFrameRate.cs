@@ -1,4 +1,3 @@
-#if UNITY_EDITOR
 using System.Collections;
 using System.Threading;
 using UnityEngine;
@@ -8,7 +7,8 @@ public class TargetFrameRate : MonoBehaviour
 
 		public int target = 60;
 		float currentFrameTime;
-		
+
+				#if UNITY_EDITOR
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +32,6 @@ public class TargetFrameRate : MonoBehaviour
                 t = Time.realtimeSinceStartup;
         }
     }
-  
+#endif  
 }
-#endif
+
