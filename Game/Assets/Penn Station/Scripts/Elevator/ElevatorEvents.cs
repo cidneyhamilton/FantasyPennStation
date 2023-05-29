@@ -1,7 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Event class for elevators
+/// </summary>
 public class ElevatorEvents 
 {
 		

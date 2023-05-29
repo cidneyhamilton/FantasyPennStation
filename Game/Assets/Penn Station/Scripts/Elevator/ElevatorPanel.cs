@@ -6,10 +6,8 @@ using UnityEngine;
 /// <summary>
 /// Used to summon the elevator
 /// </summary>
-public class ElevatorPanel : MonoBehaviour
+public class ElevatorPanel : ElevatorPart
 {
-		// Unique ID for this elevator
-		private int _elevatorID = 0;
 
 		[SerializeField]
 		private int _floor;
@@ -24,23 +22,16 @@ public class ElevatorPanel : MonoBehaviour
 
 		void OnEnable()
 		{
-				ElevatorEvents.OnAfterElevatorCall += OpenDoors;
+				ElevatorEvents.OnAfterElevatorCall += OpenAllDoors;
 				ElevatorEvents.OnAfterElevatorReachesDestination += OpenAllDoors;
 		}
 
 		void OnDisable()
 		{
-				ElevatorEvents.OnAfterElevatorCall -= OpenDoors;
+				ElevatorEvents.OnAfterElevatorCall -= OpenAllDoors;
 				ElevatorEvents.OnAfterElevatorReachesDestination -= OpenAllDoors;
-		}
-		
-		void Start()
-		{
-				// Assign the elevator ID automatically
-				_elevatorID = transform.GetComponentInParent<Elevator>().GetInstanceID();
-		}
+		}		
 
-		// Currently this is a trigger
 		private void OnTriggerEnter(Collider other)
 		{
 				
@@ -68,44 +59,67 @@ public class ElevatorPanel : MonoBehaviour
 				}
 		}
 
-
-		// Open doors on a single side
+		/// <summary>
+		/// Open doors on a single side
+		/// </summary>
+		/// <param name="id">The ID of the elevator</param>
+		/// <param name="floor">The floor number to toggle doors on</param>
 		void OpenDoors(int id, int floor)
 		{
 				ToggleDoors(id, floor, true);
 		}
-
-		
-		// Close doors on single side
+				
+		/// <summary>
+		/// Close doors on single side
+		/// </summary>
+		/// <param name="id">The ID of the elevator</param>
+		/// <param name="floor">The floor number to toggle doors on</param>
 		void CloseDoors(int id, int floor)
 		{
 				ToggleDoors(id, floor, false);
 		}
 
-		// Open doors on all sides
+	 
+		/// <summary>
+		/// Open doors on all sides
+		/// </summary>
+		/// <param name="id">The ID of the elevator</param>
+		/// <param name="floor">The floor number to toggle doors on</param>
 		void OpenAllDoors(int id, int floor)
 		{
-		
-				if (id == _elevatorID && floor == _floor)
-				{
-						Logger.Log($"Opening all doors for {id} on {floor}");
-						_frameDoors.SetBool("Open", true);
-						_carDoors.SetBool("Open", true);
-				}		
+				ToggleAllDoors(id, floor, true);
 		}
-
-		// Close doors on all sides
+		
+		/// <summary>
+		/// Close doors on all sides
+		/// </summary>
+		/// <param name="id">The ID of the elevator</param>
+		/// <param name="floor">The floor number to toggle doors on</param>
 		public void CloseAllDoors(int id, int floor)
 		{
+				ToggleAllDoors(id, floor, false);
+		}
 		
+
+		/// <summary>
+		/// Toggle doors on all sides
+		/// </summary>
+		/// <param name="id">The ID of the elevator</param>
+		/// <param name="floor">The floor number to toggle doors on</param>
+		private void ToggleAllDoors(int id, int floor, bool isOpen)
+		{				
 				if (id == _elevatorID && floor == _floor)
 				{
-						Logger.Log($"Closing all doors for {id} on {floor}");
-						_frameDoors.SetBool("Open", false);
-						_carDoors.SetBool("Open", false);
+						_frameDoors.SetBool("Open", isOpen);
+						_carDoors.SetBool("Open", isOpen);
 				}		
 		}
 		
+		/// <summary>
+		/// Toggle doors on a given side
+		/// </summary>
+		/// <param name="id">The ID of the elevator</param>
+		/// <param name="floor">The floor number to toggle doors on</param>
 		void ToggleDoors(int id, int floor, bool isOpen)
 		{
 				if (id == _elevatorID && floor == _floor && summonedElevator)

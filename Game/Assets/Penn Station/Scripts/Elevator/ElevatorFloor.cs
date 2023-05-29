@@ -5,24 +5,15 @@ using UnityEngine;
 /// <summary>
 /// Manages the Elevator module
 /// </summary>
-public class ElevatorFloor : MonoBehaviour
+public class ElevatorFloor : ElevatorPart
 {
-		
-		// Unique ID for this elevator
-		private int _elevatorID = 0;
 		
 		[SerializeField]
 		private int _floor;
 
 		[SerializeField]
 		private ElevatorPanel _LeftPanel, _RightPanel;
-		
-		void Start()
-		{
-				// Assign the elevator ID automatically
-				_elevatorID = transform.GetComponentInParent<Elevator>().GetInstanceID();
-		}
-		
+				
 		// Close doors
 		void OnTriggerExit(Collider other)
 		{

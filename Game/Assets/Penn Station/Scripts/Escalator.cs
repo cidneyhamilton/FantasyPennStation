@@ -12,7 +12,7 @@ public class Escalator : MonoBehaviour
 
 		void Start()
 		{
-				Logger.Log($"Staircase rotation: {Staircase.transform.rotation.eulerAngles.y}");
+				// Logger.Log($"Staircase rotation: {Staircase.transform.rotation.eulerAngles.y}");
 				if (Staircase.transform.rotation.eulerAngles.y != 180)
 				{
 						Logger.Log("Flipping staircase.");
