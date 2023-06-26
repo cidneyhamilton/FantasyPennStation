@@ -13,6 +13,11 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Stairs_MAT
+    second: {fileID: 2100000, guid: 54c22c9aaf4acf2449dfb6c7c7c3d444, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stairs_Trim_MAT
     second: {fileID: 2100000, guid: 39b15ed0ce378994a97363d358896a6b, type: 2}
   materials:
     materialImportMode: 2
