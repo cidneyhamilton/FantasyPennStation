@@ -3,7 +3,12 @@ guid: d3157d4370c97264bb68fb6768965a43
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tracks_Trim_MAT
+    second: {fileID: 2100000, guid: ac3582e7cbf22094f88357315276bc90, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
