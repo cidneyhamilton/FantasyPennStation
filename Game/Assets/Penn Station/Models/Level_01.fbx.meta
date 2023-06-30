@@ -7,6 +7,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Cement_MAT
+    second: {fileID: 2100000, guid: c0eaa84510ba9d84f90fd42978adbea3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dirt_MAT
+    second: {fileID: 2100000, guid: aed089d6cebbd3d4caea180b59df4c58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Glass_MAT
     second: {fileID: 2100000, guid: c772e33afd2086e4fa2dc51f91e385c5, type: 2}
   - first:
@@ -14,6 +24,21 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Protoype_MAT
     second: {fileID: 2100000, guid: 57ee901e69e483b4b84a3d151646a150, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Terrazo_MAT
+    second: {fileID: 2100000, guid: ae7eb036bf8db7e469a66a7c4a6085ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tracks_Trim_MAT
+    second: {fileID: 2100000, guid: ac3582e7cbf22094f88357315276bc90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tracks_Trim_MAT1
+    second: {fileID: 2100000, guid: ac3582e7cbf22094f88357315276bc90, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
