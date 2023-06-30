@@ -27,6 +27,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Terrazo_MAT
+    second: {fileID: 2100000, guid: ae7eb036bf8db7e469a66a7c4a6085ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Tracks_Trim_MAT
     second: {fileID: 2100000, guid: ac3582e7cbf22094f88357315276bc90, type: 2}
   - first:
