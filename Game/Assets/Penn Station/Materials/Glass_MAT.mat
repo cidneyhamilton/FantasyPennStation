@@ -8,18 +8,17 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Glass_MAT
-  m_Shader: {fileID: 211, guid: 0000000000000000f000000000000000, type: 0}
-  m_ValidKeywords:
+  m_Shader: {fileID: 4800000, guid: 4ae935bab0143fe4ab16d7e7f9a13579, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _ALPHAPREMULTIPLY_ON
-  m_InvalidKeywords: []
+  - _FALLOFFOPACITY_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
-  disabledShaderPasses:
-  - GRABPASS
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -28,11 +27,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 498ed119de35f9446ab7d2223c3a7be4, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CubeMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 8900000, guid: 5bd3dde6ef6012d4fabbbeddb40d6a4b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -92,7 +91,7 @@ Material:
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BlendOp: 0
-    - _BlurReflection: 0
+    - _BlurReflection: 5.17
     - _Brightness: 1
     - _BumpScale: 1
     - _BumpScaleDecal: 0.1
@@ -113,16 +112,16 @@ Material:
     - _DstBlendAlpha: 10
     - _EmissionEnabled: 0
     - _EmissiveIntensity: 1
-    - _Fade: 0
+    - _Fade: 0.375
     - _FalloffFade: 0
     - _FalloffFade1: 0
-    - _FalloffOpacity: 0
+    - _FalloffOpacity: 1
     - _FalloffOpacityIntensity: 1
     - _FlipbookBlending: 0
     - _FlipbookMode: 0
     - _FresnelStrength: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.25123277
+    - _Glossiness: 0.282
     - _GlossinessDecal: 0.5
     - _GlossyReflections: 1
     - _GradientFade: 1
@@ -139,7 +138,7 @@ Material:
     - _OcclusionStrength: 1
     - _OffsetX: 0
     - _OffsetY: 0
-    - _Opacity: 1
+    - _Opacity: 0.2
     - _Parallax: 0.02
     - _PowerFalloffFade: 1
     - _PowerFalloffOpacity: 1
@@ -150,7 +149,7 @@ Material:
     - _ReflectionDecal: 0
     - _ReflectionIntensity: 1
     - _ReflectionStrength: 0
-    - _Refraction: 1.1
+    - _Refraction: 0
     - _Rotation: 0
     - _Saturation: 0
     - _SaturationDecal: 0
@@ -175,7 +174,7 @@ Material:
     - _BaseColor: {r: 0.39560333, g: 0.5463087, b: 0.6603774, a: 0.27058825}
     - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 0.3956033, g: 0.5463087, b: 0.6603774, a: 0.27058825}
+    - _Color: {r: 0.45768067, g: 0.65290195, b: 0.8018868, a: 0.09803922}
     - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _ColorCubemap: {r: 1, g: 1, b: 1, a: 1}
     - _ColorDecal: {r: 1, g: 1, b: 1, a: 1}
