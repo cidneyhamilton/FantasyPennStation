@@ -12,13 +12,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Concrete_MAT
+    second: {fileID: 2100000, guid: c0eaa84510ba9d84f90fd42978adbea3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Dirt_MAT
+    second: {fileID: 2100000, guid: aed089d6cebbd3d4caea180b59df4c58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ground_MAT
     second: {fileID: 2100000, guid: aed089d6cebbd3d4caea180b59df4c58, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Home_Cement_MAT
     second: {fileID: 2100000, guid: c0eaa84510ba9d84f90fd42978adbea3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Prototype_MAT
+    second: {fileID: 2100000, guid: 57ee901e69e483b4b84a3d151646a150, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

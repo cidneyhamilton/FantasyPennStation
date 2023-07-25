@@ -7,6 +7,16 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Floor_Terrazzo_MAT
+    second: {fileID: 2100000, guid: ae7eb036bf8db7e469a66a7c4a6085ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Prototype_MAT
+    second: {fileID: 2100000, guid: 57ee901e69e483b4b84a3d151646a150, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Protoype_MAT
     second: {fileID: 2100000, guid: 57ee901e69e483b4b84a3d151646a150, type: 2}
   - first:
