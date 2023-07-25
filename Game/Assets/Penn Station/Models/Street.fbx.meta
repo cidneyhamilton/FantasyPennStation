@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 74bd1321b43fded4cbb979a4da296e39
+guid: d5098f15630f13c4580285df0b986496
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,38 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Cement_MAT
-    second: {fileID: 2100000, guid: c0eaa84510ba9d84f90fd42978adbea3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Dirt_MAT
-    second: {fileID: 2100000, guid: aed089d6cebbd3d4caea180b59df4c58, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Glass_MAT
-    second: {fileID: 2100000, guid: c772e33afd2086e4fa2dc51f91e385c5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Protoype_MAT
     second: {fileID: 2100000, guid: 57ee901e69e483b4b84a3d151646a150, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Terrazo_MAT
-    second: {fileID: 2100000, guid: ae7eb036bf8db7e469a66a7c4a6085ec, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Tracks_Trim_MAT
-    second: {fileID: 2100000, guid: ac3582e7cbf22094f88357315276bc90, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Tracks_Trim_MAT1
-    second: {fileID: 2100000, guid: ac3582e7cbf22094f88357315276bc90, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -82,7 +52,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -111,7 +81,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
-  importAnimation: 0
+  importAnimation: 1
   humanDescription:
     serializedVersion: 3
     human: []
@@ -130,7 +100,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
