@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cb1c2cd2ad2a0ec4f848894c6605d7c1
+guid: ff873da67902c0a4da10879181b750ed
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -8,11 +8,6 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Stairs_Trim_MAT
-    second: {fileID: 2100000, guid: 39b15ed0ce378994a97363d358896a6b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Steel_MAT
     second: {fileID: 2100000, guid: 39b15ed0ce378994a97363d358896a6b, type: 2}
   materials:
     materialImportMode: 2
