@@ -12,9 +12,10 @@ public abstract class ElevatorPart : MonoBehaviour
 		protected int _elevatorID;
 
 		
-		protected void Start()
+		protected virtual void Start()
 		{
 				// Assign the elevator ID automaticaly
-				_elevatorID = transform.GetComponentInParent<Elevator>().GetInstanceID();				
+				_elevatorID = transform.GetComponentInParent<Elevator>().GetInstanceID();
+				Logger.Log($"Setting elevator ID on part named {gameObject.name} to {_elevatorID}");
 		}
 }

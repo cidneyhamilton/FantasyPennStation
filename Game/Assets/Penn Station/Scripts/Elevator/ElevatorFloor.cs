@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,21 +7,21 @@ using UnityEngine;
 /// Manages the Elevator module
 /// </summary>
 public class ElevatorFloor : ElevatorPart
-{
+{		
+
+		/// <summary> The sequence number of this elevator floor </summary>
+		public int Floor;
 		
 		[SerializeField]
-		private int _floor;
-
-		[SerializeField]
-		private ElevatorPanel _LeftPanel, _RightPanel;
+		private ElevatorPanel[] doors;
 				
 		// Close doors
 		void OnTriggerExit(Collider other)
 		{
 				if (other.tag == "Player")
 				{
-						_LeftPanel.CloseAllDoors(_elevatorID, _floor);
-						_RightPanel.CloseAllDoors(_elevatorID, _floor);
+						Array.ForEach(doors, door => door.CloseAllDoors(_elevatorID, Floor));
+
 				}
 		}
 }

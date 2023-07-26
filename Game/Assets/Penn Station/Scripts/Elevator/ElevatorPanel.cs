@@ -4,21 +4,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
+/// ElevatorPanel.cs
+///
 /// Used to summon the elevator
 /// </summary>
 public class ElevatorPanel : ElevatorPart
 {
 
-		[SerializeField]
 		private int _floor;
-
-		[SerializeField]
-		private Direction _moveDirection = Direction.Up;
 
 		[SerializeField]
 		private Animator _frameDoors, _carDoors;
 
-		private bool summonedElevator;
+		private bool _summonedElevator;
 
 		void OnEnable()
 		{
@@ -32,20 +30,26 @@ public class ElevatorPanel : ElevatorPart
 				ElevatorEvents.OnAfterElevatorReachesDestination -= OpenAllDoors;
 		}		
 
+		protected override void Start()
+		{
+				base.Start();
+				_floor = GetComponentInParent<ElevatorFloor>().Floor;
+		}
+		
 		private void OnTriggerEnter(Collider other)
 		{
 				
 				if (other.tag == "Player")
 				{
 						// Only summon the elevator if player movement is enabled; ie, not when elevator actually moving
-						summonedElevator = true;
+						_summonedElevator = true;
 						
 						if (other.GetComponent<PlayerMovement>().MovementEnabled)
 						{
 								Logger.Log($"Summoning elevator {_elevatorID}");
 								
 								// Invoke event to summon the elevator
-								ElevatorEvents.OnElevatorCall(_elevatorID, _moveDirection);
+								ElevatorEvents.OnElevatorCall(_elevatorID, _floor);
 						}
 				}
 		}
@@ -55,7 +59,7 @@ public class ElevatorPanel : ElevatorPart
 				if (other.tag == "Player")
 				{
 						CloseDoors(_elevatorID, _floor);
-						summonedElevator = false;
+						_summonedElevator = false;
 				}
 		}
 
@@ -122,9 +126,9 @@ public class ElevatorPanel : ElevatorPart
 		/// <param name="floor">The floor number to toggle doors on</param>
 		void ToggleDoors(int id, int floor, bool isOpen)
 		{
-				if (id == _elevatorID && floor == _floor && summonedElevator)
+				if (id == _elevatorID && floor == _floor && _summonedElevator)
 				{
-						Logger.Log($"Toggling doors for {id} on {floor} from {gameObject.name}");
+						Logger.Log($"Toggling doors for {id} on {floor} from {gameObject.name}, open: {isOpen}");
 						_frameDoors.SetBool("Open", isOpen);
 						_carDoors.SetBool("Open", isOpen);
 				}

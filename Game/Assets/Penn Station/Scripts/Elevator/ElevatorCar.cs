@@ -12,8 +12,10 @@ public class ElevatorCar : ElevatorPart
 		/// <summary>
 		/// Coordinates for each floor the elevator can navigate to
 		/// </summary>
-		private Transform _targetTop, _targetBottom;
+		private Transform[] _floors;
 
+		private int maxFloor, minFloor;
+		
 		[SerializeField]
 		/// <summary>
 		/// Speed of the elevator
@@ -69,14 +71,9 @@ public class ElevatorCar : ElevatorPart
 				base.Start();
 
 				// Elevator starts on specified floor
-				if (_floor == 0)
-				{
-						transform.SetPositionAndRotation(_targetBottom.position, _targetBottom.rotation);
-				}
-				else if (_floor == 1)
-				{
-						transform.SetPositionAndRotation(_targetTop.position, _targetTop.rotation);
-				}
+				transform.SetPositionAndRotation(_floors[_floor].position, _floors[_floor].rotation);
+				minFloor = 0;
+				maxFloor = _floors.Length;
 		}
 		
 		private void OnTriggerEnter(Collider other)
@@ -97,10 +94,11 @@ public class ElevatorCar : ElevatorPart
 
 		void FixedUpdate()
 		{
-				Transform target = _destinationFloor == 0 ? _targetBottom : _targetTop;				
+				Transform target = _floors[_destinationFloor];
+				
 				if (_reachedDestination == false && _moveDirection != Direction.None)
 				{
-						Logger.Log($"Target position: {target.position.y}, current position: { transform.position.y }");
+						// Logger.Log($"Target position: {target.position.y}, current position: { transform.position.y }");
 						transform.position = Vector3.MoveTowards(transform.position, target.position, _speed * Time.deltaTime);
 
 						// Wrap things up if we reach the destination floor
@@ -193,13 +191,26 @@ public class ElevatorCar : ElevatorPart
 		}
 
 		/// <summary>
-		/// Handles calling the elevator with the given ID
+		/// Handles calling the elevator with the given ID from the given floor
 		/// </summary>
-		void OnCallElevator(int ID, Direction direction)
+		void OnCallElevator(int ID, int floorCalledFrom)
 		{
-				if (ID == _elevatorID && _moveDirection == Direction.None)
+
+				Logger.Log($"Attempt to call elevator {ID} from {_floor} to floor {floorCalledFrom}, _elevatorID: {_elevatorID}");
+				
+				if (ID == _elevatorID)
 				{
-						CallElevator(direction);
+						if (floorCalledFrom != _floor)
+						{
+								Logger.Log($"Calling elevator to floor {floorCalledFrom}");
+								Direction direction = floorCalledFrom > _floor ? Direction.Up : Direction.Down;					 
+								CallElevator(direction);
+						}
+						else
+						{
+								// Called from this floor; can immediately open the doors
+								ElevatorEvents.OnAfterElevatorCall(ID, _floor);
+						}
 				}
 		}
 
@@ -211,27 +222,15 @@ public class ElevatorCar : ElevatorPart
 		void CallElevator(Direction direction)
 		{
 				Logger.Log($"Calling elevator in direction {direction}");
-				if (direction == Direction.Up && _floor == 1)
+				if (direction == Direction.Up && _floor < maxFloor)
 				{
-						// Don't bother calling the elevator; we're already at the top
+						CallElevatorToFloor(_destinationFloor, direction);
 				}
-				else if (direction == Direction.Down && _floor == 0)
+				else if (direction == Direction.Down && _floor > minFloor)
 				{
-						// Already at the bottom
+						CallElevatorToFloor(_destinationFloor, direction);
 				}
-				else if (direction == Direction.Up && _floor == 0)
-				{
-						// Call the elevator to the top
-						Logger.Log("Call the elevator to the top");
-						CallElevatorToFloor(1, direction);
-				}
-				else if (direction == Direction.Down && _floor == 1)
-				{
-						// Call the elevator to the bottom
-						Logger.Log("Call the elevator to the bottom");
-						CallElevatorToFloor(0, direction);
-				}
-
+				
 				ElevatorEvents.OnAfterElevatorCall(_elevatorID, _floor);
 		}
 

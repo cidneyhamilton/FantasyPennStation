@@ -9,16 +9,15 @@ using UnityEngine;
 public class ElevatorEvents 
 {
 		
-		public delegate void ElevatorEvent(int id, Direction direction);
-		public delegate void ElevatorDoorEvent(int id, int floor);
+		public delegate void ElevatorEvent(int id, int floor);
 		
 		// Event to summon the elevator
 		public static ElevatorEvent OnElevatorCall;
 
 		// Event after elevator is summoned
-		public static ElevatorDoorEvent OnAfterElevatorCall;
+		public static ElevatorEvent OnAfterElevatorCall;
 
 		// Event after the elevator reaches the destination floor
-		public static ElevatorDoorEvent OnAfterElevatorReachesDestination;
+		public static ElevatorEvent OnAfterElevatorReachesDestination;
 
 }

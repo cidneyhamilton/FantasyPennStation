@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 247479116552939129, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 247479116552939129, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: m_Center.y
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 280698321829630496, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -71,6 +79,46 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 4.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2235003882860890998, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2271193757746129831, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: _LeftPanel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2973003237836990294, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2973003237836990294, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: m_Center.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3276090719792005348, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: m_Name
+      value: Elevator_Door_Back_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3436574228333652278, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: _RightPanel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242889665728849317, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5242889665728849317, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: m_Center.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5490700871401376459, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: _frameDoors
+      value: 
+      objectReference: {fileID: 3713451544191451104}
+    - target: {fileID: 6739136293427785818, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: _frameDoors
+      value: 
+      objectReference: {fileID: 1051265175069036150}
     - target: {fileID: 6836670847790158950, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -79,5 +127,23 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: c772e33afd2086e4fa2dc51f91e385c5, type: 2}
+    - target: {fileID: 7295860898546532773, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9146676508353495881, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+--- !u!95 &1051265175069036150 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2429246658558969553, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+  m_PrefabInstance: {fileID: 3395910846919788711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &3713451544191451104 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2065013049393477447, guid: 4bf3d5e6871ea3b05ad9a0bbf9891b19, type: 3}
+  m_PrefabInstance: {fileID: 3395910846919788711}
+  m_PrefabAsset: {fileID: 0}
