@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
 		/// True if the player can move
 		public bool MovementEnabled = true;
 
+		// True if the player can jump
+		public bool JumpEnabled = false;
+
 		// The player's velocity
 		private Vector3 Velocity;
 
@@ -48,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
         MovePlayer();
         MoveCamera();
-
+ 
     }
 
 		/// <summary>
@@ -62,21 +65,21 @@ public class PlayerMovement : MonoBehaviour
 				
         Vector3 MoveVector = transform.TransformDirection(PlayerMovementInput);
 
-        if (Controller.isGrounded)
-        {
-            Velocity.y = -1f;
+				if (Controller.isGrounded)
+				{
+						Velocity.y = -1f;
 
 						// Starts a jump
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                Velocity.y = JumpForce;
-            }
-        }
-        else
-        {
+						if (Input.GetKeyDown(KeyCode.Space) && JumpEnabled)
+						{
+								Velocity.y = JumpForce;
+						}
+				}
+				else
+				{
 						// Continues a jump
-            Velocity.y += Gravity * JUMP_FORCE * Time.deltaTime;
-        }
+						Velocity.y += Gravity * JUMP_FORCE * Time.deltaTime;
+				}
 
 				Controller.Move(MoveVector * Speed * Time.deltaTime);
         Controller.Move(Velocity * Time.deltaTime);
