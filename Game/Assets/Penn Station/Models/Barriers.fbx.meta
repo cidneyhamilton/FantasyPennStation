@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Barriers_MAT
+    second: {fileID: 2100000, guid: 1e044315c1b6698408a78fb59742c9ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Doors_MAT
     second: {fileID: 2100000, guid: 8034005bdcc5e8d4fba74a11a89e4763, type: 2}
   - first:
@@ -14,6 +19,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Glass_MAT
     second: {fileID: 2100000, guid: c772e33afd2086e4fa2dc51f91e385c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Signs_MAT
+    second: {fileID: 2100000, guid: ad0f269c25c28e74fad91b846030b5c2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
