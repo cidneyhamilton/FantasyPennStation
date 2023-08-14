@@ -19,8 +19,14 @@ public class ElevatorFloor : ElevatorPart
 		{
 				if (other.tag == "Player")
 				{
-						_LeftPanel.CloseAllDoors(_elevatorID, _floor);
-						_RightPanel.CloseAllDoors(_elevatorID, _floor);
+						if (_LeftPanel)
+						{
+								_LeftPanel.CloseAllDoors(_elevatorID, _floor);
+						}
+						if (_RightPanel)
+						{
+								_RightPanel.CloseAllDoors(_elevatorID, _floor);
+						}
 				}
 		}
 }
