@@ -7,8 +7,23 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Asphalt_MAT
+    second: {fileID: 2100000, guid: 50e5bcb24e6369a47b1563a49a0b16d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete_MAT
+    second: {fileID: 2100000, guid: c0eaa84510ba9d84f90fd42978adbea3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Protoype_MAT
     second: {fileID: 2100000, guid: 57ee901e69e483b4b84a3d151646a150, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Street_Trim_MAT
+    second: {fileID: 2100000, guid: d91433f2eb0640d4b8286aedc1cbf914, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
