@@ -17,6 +17,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Darkness_MAT
+    second: {fileID: 2100000, guid: 5858041fc2a2a2c48833f3691f0d17f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Dirt_MAT
     second: {fileID: 2100000, guid: aed089d6cebbd3d4caea180b59df4c58, type: 2}
   - first:
