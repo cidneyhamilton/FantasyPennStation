@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 07062339f3a2be84c86ad5a1c9aabbac
+guid: a7ca641c35494324a85ff5088c0a0bef
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -7,58 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Ceiling_MAT
-    second: {fileID: 2100000, guid: 0f4736fcdb6aee84e8a1385df68a408f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Concrete_MAT
-    second: {fileID: 2100000, guid: c0eaa84510ba9d84f90fd42978adbea3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Floor_MAT
-    second: {fileID: 2100000, guid: 7dbd30989bca21f40940c6069240a85c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Floor_Terrazzo_MAT
-    second: {fileID: 2100000, guid: ae7eb036bf8db7e469a66a7c4a6085ec, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Glass_MAT
+      name: Glass
     second: {fileID: 2100000, guid: c772e33afd2086e4fa2dc51f91e385c5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Prototype_MAT
-    second: {fileID: 2100000, guid: d91433f2eb0640d4b8286aedc1cbf914, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Protoype_MAT
-    second: {fileID: 2100000, guid: 57ee901e69e483b4b84a3d151646a150, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Street_MAT
-    second: {fileID: 2100000, guid: d91433f2eb0640d4b8286aedc1cbf914, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Terrazo_MAT
-    second: {fileID: 2100000, guid: ae7eb036bf8db7e469a66a7c4a6085ec, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Walls_MAT
-    second: {fileID: 2100000, guid: d95b238fe252dba4f881dbdb709e06d6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert1
-    second: {fileID: 2100000, guid: c772e33afd2086e4fa2dc51f91e385c5, type: 2}
+    second: {fileID: 2100000, guid: 1e044315c1b6698408a78fb59742c9ee, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -150,7 +105,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
