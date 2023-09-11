@@ -27,6 +27,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Glass_MAT
+    second: {fileID: 2100000, guid: c772e33afd2086e4fa2dc51f91e385c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Prototype_MAT
     second: {fileID: 2100000, guid: d91433f2eb0640d4b8286aedc1cbf914, type: 2}
   - first:
@@ -49,6 +54,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Walls_MAT
     second: {fileID: 2100000, guid: d95b238fe252dba4f881dbdb709e06d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: c772e33afd2086e4fa2dc51f91e385c5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

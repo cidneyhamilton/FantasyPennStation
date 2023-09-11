@@ -17,6 +17,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Floor_MAT
+    second: {fileID: 2100000, guid: 9174461bab69299489687425efe74571, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Floor_Marble_MAT
     second: {fileID: 2100000, guid: 9174461bab69299489687425efe74571, type: 2}
   - first:
