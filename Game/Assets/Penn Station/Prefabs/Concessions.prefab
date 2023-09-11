@@ -31,7 +31,7 @@ Transform:
   m_Children:
   - {fileID: 1035264370626598334}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &7494082167408047052
 BoxCollider:
@@ -41,25 +41,16 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8860306777267118924}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 6.212881, y: 3.2570066, z: 4.1363907}
-  m_Center: {x: -0.00000023841858, y: 1.6285033, z: 0.068195224}
+  serializedVersion: 2
+  m_Size: {x: 5.9697814, y: 2.5643668, z: 4.0071397}
+  m_Center: {x: -0.021299839, y: 1.3463199, z: 0.014845133}
 --- !u!1001 &709112469685826133
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 6528467130869099938}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2fad1e8c5e2a5924c946738a7418a1d1, type: 3}
@@ -111,9 +102,6 @@ PrefabInstance:
       value: Concessions
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fad1e8c5e2a5924c946738a7418a1d1, type: 3}
 --- !u!4 &1035264370626598334 stripped
 Transform:
