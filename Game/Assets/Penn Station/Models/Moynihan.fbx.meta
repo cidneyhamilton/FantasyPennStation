@@ -17,6 +17,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ExteriorWalls_MAT
+    second: {fileID: 2100000, guid: dfd43db0c4de95640ae699e0bbd866b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Floor_MAT
     second: {fileID: 2100000, guid: 9174461bab69299489687425efe74571, type: 2}
   - first:
@@ -44,6 +49,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Moynihan_Terrazo_MAT
     second: {fileID: 2100000, guid: ae7eb036bf8db7e469a66a7c4a6085ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Moynihan_Trim_MAT
+    second: {fileID: 2100000, guid: 21652c599943bdf4e945649ca0d8c31c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
